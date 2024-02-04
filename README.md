@@ -1,6 +1,6 @@
-# MobileFast React Native Boilerplate ⚡️
+![MobileFast Logo](https://www.lahkimomar.com/MobileFast.png)
 
-![MobileFast Logo](path/to/logo.png)
+# MobileFast React Native Boilerplate ⚡️
 
 **Develop Faster Fast** with MobileFast React Native Boilerplate - the ultimate starting point for building mobile applications that generate money! 💰 Our boilerplate includes a suite of prebuilt features designed to accelerate your development process and help you focus on what matters most: your startup's unique value proposition.
 
