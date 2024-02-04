@@ -1,0 +1,6 @@
+module Pods_MobileFast {
+  umbrella header "Pods-MobileFast-umbrella.h"
+
+  export *
+  module * { export * }
+}

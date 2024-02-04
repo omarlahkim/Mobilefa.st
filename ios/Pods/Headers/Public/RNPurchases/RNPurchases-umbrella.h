@@ -1,0 +1,1 @@
+../../../Target Support Files/RNPurchases/RNPurchases-umbrella.h

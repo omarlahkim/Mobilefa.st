@@ -7,7 +7,7 @@
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import React from 'react';
+import React, {Profiler, StrictMode} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -36,17 +36,21 @@ function App(): React.JSX.Element {
   };
   const Stack = createNativeStackNavigator();
   return (
-    <SafeAreaView style={style}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={style.backgroundColor}
-      />
-      <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen name="Home" component={HomeScreen} />
-        </Stack.Navigator>
-      </NavigationContainer>
-    </SafeAreaView>
+    <Profiler id="App" onRender={console.log}>
+      <StrictMode>
+        <SafeAreaView style={style}>
+          <StatusBar
+            barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+            backgroundColor={style.backgroundColor}
+          />
+          <NavigationContainer>
+            <Stack.Navigator>
+              <Stack.Screen name="Home" component={HomeScreen} />
+            </Stack.Navigator>
+          </NavigationContainer>
+        </SafeAreaView>
+      </StrictMode>
+    </Profiler>
   );
 }
 
