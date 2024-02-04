@@ -1,0 +1,13 @@
+current directory: /Users/mac/Projects/MobileFast/vendor/bundle/ruby/2.7.0/gems/json-2.7.1/ext/json
+/Users/mac/.rvm/rubies/ruby-2.7.6/bin/ruby -I /Users/mac/.rvm/rubies/ruby-2.7.6/lib/ruby/2.7.0 -r ./siteconf20240204-71186-glttvn.rb extconf.rb
+creating Makefile
+
+current directory: /Users/mac/Projects/MobileFast/vendor/bundle/ruby/2.7.0/gems/json-2.7.1/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/mac/Projects/MobileFast/vendor/bundle/ruby/2.7.0/gems/json-2.7.1/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/mac/Projects/MobileFast/vendor/bundle/ruby/2.7.0/gems/json-2.7.1/ext/json
+make "DESTDIR=" install
