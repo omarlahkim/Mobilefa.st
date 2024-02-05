@@ -17,7 +17,6 @@ import {
   useColorScheme,
 } from 'react-native';
 
-
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
   const style = {
@@ -33,7 +32,7 @@ function App(): React.JSX.Element {
       />
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen name="Home" component={Home} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaView>

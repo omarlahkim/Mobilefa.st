@@ -17,6 +17,19 @@ No, we didn't mistake the word "Faster", Neither "Fast"! 😂
 - **Monetization:** In-app purchase and AdMob integration for revenue.
 - **Social Media Ready:** Facebook SDK for auth and Pixel integration.
 
+### To Do
+
+- [ ] Analytics: AWS Amplify
+- [ ] Monetization: Revenue Cat (In App Purchases) | Admob (Ads Integration: Free Version)
+- [ ] Authentication: AWS Amplify
+- [ ] Navigation: React Navigation
+- [ ] Animations: React Native Gestures
+- [ ] Lottie
+- [ ] Multi Language: i18n
+- [ ] Facebook SDK: Pixel
+- [ ] Dynamic Theming: RN Elements or Native Styling
+- [ ] Tests: Jest
+
 ## Quick Start 🚀
 
 ### Installation
