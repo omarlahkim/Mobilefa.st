@@ -17,6 +17,10 @@ No, we didn't mistake the word "Faster", Neither "Fast"! 😂
 - **Monetization:** In-app purchase and AdMob integration for revenue.
 - **Social Media Ready:** Facebook SDK for auth and Pixel integration.
 
+### Documentation
+
+In Progress...
+
 ### To Do
 
 - [ ] Analytics: AWS Amplify
@@ -29,6 +33,7 @@ No, we didn't mistake the word "Faster", Neither "Fast"! 😂
 - [ ] Facebook SDK: Pixel
 - [ ] Dynamic Theming: RN Elements or Native Styling
 - [ ] Tests: Jest
+- [ ] Documentation
 
 ## Quick Start 🚀
 
