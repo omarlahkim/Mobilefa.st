@@ -88,4 +88,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Powered by Digitilift
 
-Brought to you by the innovative minds at [Digitilift](https://digitilift.ma).
+Brought to you by the innovative minds at [Digitlift](https://digitlift.ma).
