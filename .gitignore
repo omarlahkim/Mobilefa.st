@@ -64,3 +64,5 @@ buck-out/
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+vendor/
