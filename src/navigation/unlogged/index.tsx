@@ -2,10 +2,7 @@ import {InitialState} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {Login, Signup} from '../../screens';
 
-const AuthNavigator = () => {
-  const isLoggedIn = useSelector(
-    (state: InitialState) => state.loginReducer.isLoggedIn,
-  );
+const UnLoggedNavigator = () => {
   const AuthStack = createNativeStackNavigator();
   const Stack = createNativeStackNavigator();
   return (
@@ -31,3 +28,5 @@ const AuthNavigator = () => {
     </AuthStack.Navigator>
   );
 };
+
+export default UnLoggedNavigator;

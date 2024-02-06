@@ -1,41 +1,30 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  Text,
-  View,
-  useColorScheme,
-} from 'react-native';
+import {SafeAreaView, useColorScheme} from 'react-native';
+import Navigation from './navigation';
+import {Theme} from '@react-navigation/native';
+import {persistor, store} from './store/store';
+import {Provider} from 'react-redux';
+import {PersistGate} from 'redux-persist/integration/react';
 
-function App(): React.JSX.Element {
+interface IProps {
+  theme: Theme;
+}
+
+function App(props: IProps): JSX.Element {
+  const {theme} = props;
   const isDarkMode = useColorScheme() === 'dark';
   const style = {
     flex: 1,
     backgroundColor: isDarkMode ? '#000' : '#fff',
   };
-  const Stack = createNativeStackNavigator();
   return (
-    <SafeAreaView style={style}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={style.backgroundColor}
-      />
-      <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen name="Home" component={Home} />
-        </Stack.Navigator>
-      </NavigationContainer>
-    </SafeAreaView>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <SafeAreaView style={style}>
+          <Navigation theme={theme} />
+        </SafeAreaView>
+      </PersistGate>
+    </Provider>
   );
 }
 

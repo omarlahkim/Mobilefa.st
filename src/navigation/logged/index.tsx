@@ -9,3 +9,5 @@ const LoggedInNavigator = () => (
     <Stack.Screen name="Home" component={Home} options={homeOptions} />
   </Stack.Navigator>
 );
+
+export default LoggedInNavigator;

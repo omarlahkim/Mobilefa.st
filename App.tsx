@@ -17,7 +17,6 @@ import {
   useColorScheme,
 } from 'react-native';
 
-
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
   const style = {
