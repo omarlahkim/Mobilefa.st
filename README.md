@@ -86,6 +86,6 @@ Your contributions help make MobileFast even faster! If you've got an enhancemen
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Powered by Digitilift
+## Powered by Digitlift
 
 Brought to you by the innovative minds at [Digitlift](https://digitlift.ma).
