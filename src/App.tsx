@@ -2,7 +2,7 @@ import React from 'react';
 import {SafeAreaView, useColorScheme} from 'react-native';
 import Navigation from './navigation';
 import {Theme} from '@react-navigation/native';
-import {persistor, store} from './store/store';
+import {persistor, store} from './redux/store/store';
 import {Provider} from 'react-redux';
 import {PersistGate} from 'redux-persist/integration/react';
 
