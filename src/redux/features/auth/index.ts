@@ -3,10 +3,12 @@ import type {PayloadAction} from '@reduxjs/toolkit';
 
 export interface AuthState {
   token: string;
+  isLogged: boolean;
 }
 
 const initialState: AuthState = {
   token: '',
+  isLogged: false,
 };
 
 export const authSlice = createSlice({
@@ -15,9 +17,11 @@ export const authSlice = createSlice({
   reducers: {
     login: (state, action: PayloadAction<string>) => {
       state.token = action.payload;
+      state.isLogged = true;
     },
     logout: state => {
       state.token = '';
+      state.isLogged = false;
     },
   },
 });

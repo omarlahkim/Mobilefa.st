@@ -1,7 +1,11 @@
 import react from 'react';
-import {ScrollView} from 'react-native';
+import {ScrollView, Text} from 'react-native';
 import styles from './styles';
 
-export default function Home() {
-  return <ScrollView contentContainerStyle={styles.container}></ScrollView>;
+export default function SignUp() {
+  return (
+    <ScrollView contentContainerStyle={styles.container}>
+      <Text>SignUp</Text>
+    </ScrollView>
+  );
 }
