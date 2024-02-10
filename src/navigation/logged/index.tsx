@@ -1,13 +1,15 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Home from '../../screens/Login';
-import {homeOptions} from '../options';
+import Home from '../../screens/Home';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
-const Stack = createNativeStackNavigator();
+// Create a stack navigator
+const Tab = createBottomTabNavigator();
 
+// Return the bottom tab navigator with the home screen
 const LoggedInNavigator = () => (
-  <Stack.Navigator>
-    <Stack.Screen name="Home" component={Home} options={homeOptions} />
-  </Stack.Navigator>
+  <Tab.Navigator>
+    <Tab.Screen options={{headerShown: false}} name="Home" component={Home} />
+  </Tab.Navigator>
 );
 
 export default LoggedInNavigator;
