@@ -1,0 +1,53 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/BricolageGrotesque-Bold.ttf",
+      "sha1": "d7d39ce51c7937df08d326b213825380ad476cf0"
+    },
+    {
+      "path": "assets/fonts/BricolageGrotesque-ExtraBold.ttf",
+      "sha1": "69281746f6df3e820f8ea06acb65a52378e6d8ea"
+    },
+    {
+      "path": "assets/fonts/BricolageGrotesque-ExtraLight.ttf",
+      "sha1": "dc7bb4d9dedb750191d05e7cc2c31ba87195ff15"
+    },
+    {
+      "path": "assets/fonts/BricolageGrotesque-Light.ttf",
+      "sha1": "70640a8f30c9b5cc334ac1aef54b768c72ee3029"
+    },
+    {
+      "path": "assets/fonts/BricolageGrotesque-Medium.ttf",
+      "sha1": "f9c71d054a69b0638f8f30cb12f7e33a6f408941"
+    },
+    {
+      "path": "assets/fonts/BricolageGrotesque-Regular.ttf",
+      "sha1": "ab56700f939ca752111fdff2195f24290621afae"
+    },
+    {
+      "path": "assets/fonts/BricolageGrotesque-SemiBold.ttf",
+      "sha1": "0a39ea6a751a4cb8a5fb59c05204cdb4afac1ff4"
+    },
+    {
+      "path": "assets/fonts/SpaceGrotesk-Bold.ttf",
+      "sha1": "b2aa14fa837cf3ed5e647c87906e88238d88c548"
+    },
+    {
+      "path": "assets/fonts/SpaceGrotesk-Light.ttf",
+      "sha1": "37a7dffc1d580f94f9204b8a90f6c60bed9f500e"
+    },
+    {
+      "path": "assets/fonts/SpaceGrotesk-Medium.ttf",
+      "sha1": "53a82dc42149eb575e8e38dcd0c618899e7e8b8f"
+    },
+    {
+      "path": "assets/fonts/SpaceGrotesk-Regular.ttf",
+      "sha1": "d1666e3605d713802650ab26c0914238ca124274"
+    },
+    {
+      "path": "assets/fonts/SpaceGrotesk-SemiBold.ttf",
+      "sha1": "0f5ec8c385c42b65cd8bcb494f26e9c282d6a107"
+    }
+  ]
+}

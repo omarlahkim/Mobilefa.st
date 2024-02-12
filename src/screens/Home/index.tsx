@@ -1,8 +1,9 @@
 import react from 'react';
-import {Button, ScrollView, Text} from 'react-native';
+import {ScrollView, Text} from 'react-native';
 import styles from './styles';
 import {logout} from '../../redux/features/auth';
 import {useDispatch} from 'react-redux';
+import {Button} from '@rneui/themed';
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -10,7 +11,7 @@ export default function Home() {
     <ScrollView contentContainerStyle={styles.container}>
       <Text>Home</Text>
       <Button
-        title="LogOut"
+        title="Log Out"
         onPress={() => {
           dispatch(logout());
         }}

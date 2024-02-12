@@ -1,3 +1,5 @@
+import {createTheme} from '@rneui/themed';
+
 export const MobileFastTheme = {
   dark: false,
   colors: {
@@ -21,3 +23,37 @@ export const MobileFastDarkTheme = {
     notification: 'rgb(255, 69, 58)',
   },
 };
+
+export const MobileFastRNETheme = createTheme({
+  components: {
+    Text: {
+      style: {},
+      h1Style: {
+        fontFamily: 'BricolageGrotesque-ExtraBold',
+        fontSize: 24,
+      },
+      h2Style: {
+        fontFamily: 'BricolageGrotesque-Bold',
+        fontSize: 18,
+      },
+      h3Style: {
+        fontFamily: 'BricolageGrotesque-Medium',
+        fontSize: 16,
+      },
+      h4Style: {
+        fontFamily: 'SpaceGrotesk-Regular',
+        fontSize: 12,
+        color: 'rgba(0, 0, 0, 0.6)',
+      },
+    },
+    Button: {
+      titleStyle: {
+        fontFamily: 'BricolageGrotesque-Bold',
+      },
+      containerStyle: {
+        borderRadius: 5,
+        width: '100%',
+      },
+    },
+  },
+});

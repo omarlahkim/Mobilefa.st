@@ -9,6 +9,16 @@ const Tab = createBottomTabNavigator();
 const LoggedInNavigator = () => (
   <Tab.Navigator>
     <Tab.Screen options={{headerShown: false}} name="Home" component={Home} />
+    <Tab.Screen
+      options={{headerShown: false}}
+      name="Settings"
+      component={Home}
+    />
+    <Tab.Screen
+      options={{headerShown: false}}
+      name="Profile"
+      component={Home}
+    />
   </Tab.Navigator>
 );
 
