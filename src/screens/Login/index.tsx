@@ -15,7 +15,7 @@ export default function Login() {
         style={{
           height: 55,
           width: 240,
-          marginBottom: 20,
+          resizeMode: 'contain',
         }}
         source={require('../../../assets/images/logo.png')}
       />
@@ -32,7 +32,7 @@ export default function Login() {
           </Text>{' '}
           Fast ⚡️ Mobile Applications that generate money 🤑
         </Text>
-        <Text h4>
+        <Text h4 style={{textAlign: 'center'}}>
           No we didn't mistake the word "Faster", Neither "Fast"! 😂
         </Text>
       </View>
@@ -51,7 +51,7 @@ export default function Login() {
         </Button>
         <View style={styles.OrContainer}>
           <View style={styles.OrDivider} />
-          <Text>Or</Text>
+          <Text h2>Or</Text>
           <View style={styles.OrDivider} />
         </View>
 
@@ -78,9 +78,18 @@ export default function Login() {
           </Text>
         </Button>
       </View>
-      <View>
-        <Text>Powered by: </Text>
-        <Image source={require('../../../assets/images/digitlift.png')} />
+      <View style={styles.poweredContainer}>
+        <Text h4>Powered by: </Text>
+        <Image
+          width={100}
+          height={100}
+          style={{
+            height: 55,
+            width: 90,
+            resizeMode: 'contain',
+          }}
+          source={require('../../../assets/images/digitlift.png')}
+        />
       </View>
     </ScrollView>
   );

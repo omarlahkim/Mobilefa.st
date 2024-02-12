@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginVertical: 20,
+    gap: 20,
   },
   OrDivider: {
     width: 100,
@@ -21,8 +22,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignContent: 'center',
     alignItems: 'center',
-    gap: 5,
-    padding: 20,
+    padding: 10,
     backgroundColor: '#FFBB00',
     borderRadius: 10,
   },
@@ -32,6 +32,12 @@ const styles = StyleSheet.create({
     marginVertical: 20,
     width: '90%',
     transform: [{rotate: '1deg'}],
+  },
+  poweredContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 10,
   },
 });
 

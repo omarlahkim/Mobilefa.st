@@ -53,6 +53,7 @@ export const MobileFastRNETheme = createTheme({
       containerStyle: {
         borderRadius: 5,
         width: '100%',
+        marginVertical: 5,
       },
     },
   },
