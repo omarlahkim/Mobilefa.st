@@ -53,7 +53,23 @@ export const MobileFastRNETheme = createTheme({
       containerStyle: {
         borderRadius: 5,
         width: '100%',
-        marginVertical: 5,
+        // marginVertical: 5,
+      },
+    },
+    Input: {
+      inputStyle: {
+        fontFamily: 'SpaceGrotesk-Regular',
+        fontSize: 15,
+        fontWeight: 'bold',
+      },
+      placeholderTextColor: 'rgba(0, 0, 0, 0.5)',
+      containerStyle: {},
+      inputContainerStyle: {
+        backgroundColor: 'rgba(255, 255, 255, 0.8)',
+        borderWidth: 0,
+        borderBottomWidth: 0,
+        borderRadius: 5,
+        paddingHorizontal: 10,
       },
     },
   },

@@ -1,6 +1,6 @@
 [![license](https://img.shields.io/badge/license-BSD_3-brightgreen.svg?style=flat)](https://github.com/Tencent/MMKV/blob/master/LICENSE.TXT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Tencent/MMKV/pulls)
-[![Release Version](https://img.shields.io/badge/release-1.3.2-brightgreen.svg)](https://github.com/Tencent/MMKV/releases)
+[![Release Version](https://img.shields.io/badge/release-1.3.4-brightgreen.svg)](https://github.com/Tencent/MMKV/releases)
 [![Platform](https://img.shields.io/badge/Platform-%20Android%20%7C%20iOS%2FmacOS%20%7C%20Win32%20%7C%20POSIX-brightgreen.svg)](https://github.com/Tencent/MMKV/wiki/home)
 
 中文版本请参看[这里](./README_CN.md)
@@ -28,8 +28,8 @@ Add the following lines to `build.gradle` on your app module:
 
 ```gradle
 dependencies {
-    implementation 'com.tencent:mmkv:1.3.2'
-    // replace "1.3.2" with any available version
+    implementation 'com.tencent:mmkv:1.3.4'
+    // replace "1.3.4" with any available version
 }
 ```
 
@@ -157,11 +157,11 @@ For more benchmark data, please refer to [our benchmark](https://github.com/Tenc
    git clone https://github.com/Tencent/MMKV.git
    ```
   
-2. Add `Win32/MMKV/MMKV.vcxproj` to your solution;
+2. Add `Core/core.vcxproj` to your solution;
 3. Add `MMKV` project to your project's dependencies;
 4. Add `$(OutDir)include` to your project's `C/C++` -> `General` -> `Additional Include Directories`;
 5. Add `$(OutDir)` to your project's `Linker` -> `General` -> `Additional Library Directories`;
-6. Add `MMKV.lib` to your project's `Linker` -> `Input` -> `Additional Dependencies`;
+6. Add `mmkv.lib` to your project's `Linker` -> `Input` -> `Additional Dependencies`;
 7. Add `#include <MMKV/MMKV.h>` to your source file and we are done.
 
 

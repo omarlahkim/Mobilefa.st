@@ -1,6 +1,6 @@
 {
   "name": "React-Core",
-  "version": "0.73.3",
+  "version": "0.73.6",
   "summary": "The core of React Native.",
   "homepage": "https://reactnative.dev/",
   "license": "MIT",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/facebook/react-native.git",
-    "tag": "v0.73.3"
+    "tag": "v0.73.6"
   },
   "resource_bundles": {
     "RCTI18nStrings": [
@@ -102,13 +102,13 @@
       ],
       "dependencies": {
         "React-Core/Default": [
-          "0.73.3"
+          "0.73.6"
         ],
         "React-Core/RCTWebSocket": [
-          "0.73.3"
+          "0.73.6"
         ],
         "React-jsinspector": [
-          "0.73.3"
+          "0.73.6"
         ]
       }
     },
@@ -117,7 +117,7 @@
       "source_files": "Libraries/WebSocket/*.{h,m}",
       "dependencies": {
         "React-Core/Default": [
-          "0.73.3"
+          "0.73.6"
         ]
       }
     },

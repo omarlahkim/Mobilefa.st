@@ -6,19 +6,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     alignItems: 'center',
   },
-  OrContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginVertical: 20,
-    gap: 20,
-  },
-  OrDivider: {
-    width: 100,
-    height: 2,
-    backgroundColor: 'black',
-  },
   actionsContainer: {
     width: '94%',
+    gap: 10,
     justifyContent: 'space-between',
     alignContent: 'center',
     alignItems: 'center',

@@ -1,96 +1,58 @@
-import react from 'react';
-import {ScrollView, StyleSheet, View} from 'react-native';
+import react, {ComponentProps} from 'react';
+import {ScrollView, View} from 'react-native';
 import styles from './styles';
 import {login} from '../../redux/features/auth';
 import {useDispatch} from 'react-redux';
-import {Button, Icon, Image, Text} from '@rneui/themed';
+import {Image, Text} from '@rneui/themed';
+import SocialLoginButton from '../../components/Common/UnauthenticatedSection/SocialLoginButton';
+import BaseView from '../../components/Common/UnauthenticatedSection/BaseView';
+import Or from 'src/components/Common/UI/Or';
 
-export default function Login() {
+export default function Login({navigation}: ComponentProps<any>) {
   const dispatch = useDispatch();
-  return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <Image
-        width={100}
-        height={100}
-        style={{
-          height: 55,
-          width: 240,
-          resizeMode: 'contain',
-        }}
-        source={require('../../../assets/images/logo.png')}
-      />
-      <View>
-        <Text h1 style={{textAlign: 'center'}}>
-          Develop{' '}
-          <Text
-            style={{
-              textDecorationStyle: 'solid',
-              textDecorationLine: 'underline',
-              textDecorationColor: '#FFBB00',
-            }}>
-            Faster
-          </Text>{' '}
-          Fast ⚡️ Mobile Applications that generate money 🤑
-        </Text>
-        <Text h4 style={{textAlign: 'center'}}>
-          No we didn't mistake the word "Faster", Neither "Fast"! 😂
-        </Text>
-      </View>
-      <View style={styles.actionsContainer}>
-        <Button color={'white'}>
-          <Icon type="antdesign" color={'#4285F4'} size={25} name="google" />
-          <Text style={{color: '#4285F4', paddingHorizontal: 5}} h3>
-            Sign In with Google
-          </Text>
-        </Button>
-        <Button color={'black'}>
-          <Icon color={'white'} size={27} name="apple" />
-          <Text style={{color: 'white', paddingHorizontal: 5}} h3>
-            Sign In with Apple
-          </Text>
-        </Button>
-        <View style={styles.OrContainer}>
-          <View style={styles.OrDivider} />
-          <Text h2>Or</Text>
-          <View style={styles.OrDivider} />
-        </View>
 
-        <Button color={'#8221FF'}>
-          <Icon color={'white'} size={25} name="email" />
-          <Text style={{color: 'white', paddingHorizontal: 5}} h3>
-            Sign In using Email
-          </Text>
-        </Button>
+  const navigateToSignUp = () => {
+    console.log('Navigating to SignUp');
+    navigation.navigate('SignUp');
+  };
+
+  return (
+    <BaseView>
+      <View style={styles.actionsContainer}>
+        <SocialLoginButton
+          color="white"
+          text="Sign In with Google"
+          icon="google"
+          tcolor="#4285F4"
+          type="antdesign"
+          onPress={console.log}
+        />
+        <SocialLoginButton
+          color="black"
+          text="Sign In with Apple"
+          icon="apple"
+          tcolor="white"
+          onPress={console.log}
+        />
+
+        <Or />
+        <SocialLoginButton
+          color="#8221FF"
+          text="Sign In using Email"
+          icon="email"
+          tcolor="white"
+          onPress={() => dispatch(login('AZEEE'))}
+        />
       </View>
       <View style={styles.SignUpContainer}>
         <Text h3>Don't have an account?</Text>
-        <Button
-          color={'#FFBB00'}
-          onPress={() => {
-            dispatch(login('test'));
-          }}
-          containerStyle={{
-            justifyContent: 'center',
-            alignContent: 'center',
-          }}>
-          <Text style={{color: 'black'}} h2>
-            Create your account
-          </Text>
-        </Button>
-      </View>
-      <View style={styles.poweredContainer}>
-        <Text h4>Powered by: </Text>
-        <Image
-          width={100}
-          height={100}
-          style={{
-            height: 55,
-            width: 90,
-            resizeMode: 'contain',
-          }}
-          source={require('../../../assets/images/digitlift.png')}
+        <SocialLoginButton
+          color="#FFBB00"
+          text="Create your account"
+          tcolor="black"
+          onPress={navigateToSignUp}
         />
       </View>
-    </ScrollView>
+    </BaseView>
   );
 }
