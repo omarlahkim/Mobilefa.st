@@ -7,9 +7,11 @@ import {Image, Text} from '@rneui/themed';
 import SocialLoginButton from '../../components/Common/UnauthenticatedSection/SocialLoginButton';
 import BaseView from '../../components/Common/UnauthenticatedSection/BaseView';
 import Or from 'src/components/Common/UI/Or';
+import {useTranslation} from 'react-i18next';
 
 export default function Login({navigation}: ComponentProps<any>) {
   const dispatch = useDispatch();
+  const {t} = useTranslation();
 
   const navigateToSignUp = () => {
     console.log('Navigating to SignUp');
@@ -17,7 +19,21 @@ export default function Login({navigation}: ComponentProps<any>) {
   };
 
   return (
-    <BaseView>
+    <BaseView
+      description={
+        <>
+          Develop{' '}
+          <Text
+            style={{
+              textDecorationStyle: 'solid',
+              textDecorationLine: 'underline',
+              textDecorationColor: '#FFBB00',
+            }}>
+            Faster
+          </Text>{' '}
+          Fast ⚡️ Mobile Applications that generate money 🤑
+        </>
+      }>
       <View style={styles.actionsContainer}>
         <SocialLoginButton
           color="white"
@@ -34,7 +50,6 @@ export default function Login({navigation}: ComponentProps<any>) {
           tcolor="white"
           onPress={console.log}
         />
-
         <Or />
         <SocialLoginButton
           color="#8221FF"

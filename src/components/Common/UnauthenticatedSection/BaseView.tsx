@@ -2,7 +2,11 @@ import {Image, Text} from '@rneui/themed';
 import {ComponentProps} from 'react';
 import {ScrollView, StyleSheet, View} from 'react-native';
 
-export default function BaseView({children}: ComponentProps<any>) {
+export default function BaseView({
+  description,
+  short_description,
+  children,
+}: ComponentProps<any>) {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Image
@@ -17,16 +21,7 @@ export default function BaseView({children}: ComponentProps<any>) {
       />
       <View>
         <Text h1 style={{textAlign: 'center'}}>
-          Develop{' '}
-          <Text
-            style={{
-              textDecorationStyle: 'solid',
-              textDecorationLine: 'underline',
-              textDecorationColor: '#FFBB00',
-            }}>
-            Faster
-          </Text>{' '}
-          Fast ⚡️ Mobile Applications that generate money 🤑
+          {description}
         </Text>
         <Text h4 style={{textAlign: 'center'}}>
           No we didn't mistake the word "Faster", Neither "Fast"! 😂

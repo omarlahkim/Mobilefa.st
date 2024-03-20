@@ -1,6 +1,8 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from '../../screens/Home';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import Profile from 'src/screens/Profile';
+import Settings from 'src/screens/Settings';
 
 // Create a stack navigator
 const Tab = createBottomTabNavigator();
@@ -12,12 +14,12 @@ const LoggedInNavigator = () => (
     <Tab.Screen
       options={{headerShown: false}}
       name="Settings"
-      component={Home}
+      component={Settings}
     />
     <Tab.Screen
       options={{headerShown: false}}
       name="Profile"
-      component={Home}
+      component={Profile}
     />
   </Tab.Navigator>
 );

@@ -4,6 +4,7 @@ import styles from './styles';
 import {login} from '../../redux/features/auth';
 import {useDispatch} from 'react-redux';
 import {Button, Icon, Image, Input, Text} from '@rneui/themed';
+import {track} from '@amplitude/analytics-react-native';
 
 interface IloginButtonProps {
   color: string;
@@ -37,6 +38,7 @@ export default function SignUp({navigation}: ComponentProps<any>) {
 
   const navigateToSignUp = () => {
     console.log('Navigating to SignUp');
+    track('Navigating to SignUp');
     navigation.navigate('SignUp');
   };
 
