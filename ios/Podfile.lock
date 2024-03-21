@@ -104,6 +104,8 @@ PODS:
     - MMKVCore (~> 1.3.4)
   - MMKVCore (1.3.4)
   - OpenSSL-Universal (1.1.1100)
+  - PurchasesHybridCommon (10.2.0):
+    - RevenueCat (= 4.39.0)
   - RCT-Folly (2022.05.16.00):
     - boost
     - DoubleConversion
@@ -979,6 +981,10 @@ PODS:
     - glog
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
+  - react-native-config (1.5.1):
+    - react-native-config/App (= 1.5.1)
+  - react-native-config/App (1.5.1):
+    - React-Core
   - react-native-fbsdk-next (12.1.4):
     - React-Core
     - react-native-fbsdk-next/Core (= 12.1.4)
@@ -1168,6 +1174,7 @@ PODS:
     - React-jsi (= 0.73.6)
     - React-logger (= 0.73.6)
     - React-perflogger (= 0.73.6)
+  - RevenueCat (4.39.0)
   - RNCAsyncStorage (1.22.3):
     - React-Core
   - RNFastImage (8.6.3):
@@ -1175,6 +1182,9 @@ PODS:
     - SDWebImage (~> 5.11.1)
     - SDWebImageWebPCoder (~> 0.8.4)
   - RNFlashList (1.6.3):
+    - React-Core
+  - RNPurchases (7.24.0):
+    - PurchasesHybridCommon (= 10.2.0)
     - React-Core
   - RNScreens (3.29.0):
     - glog
@@ -1246,6 +1256,7 @@ DEPENDENCIES:
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - React-Mapbuffer (from `../node_modules/react-native/ReactCommon`)
   - "react-native-blur (from `../node_modules/@react-native-community/blur`)"
+  - react-native-config (from `../node_modules/react-native-config`)
   - react-native-fbsdk-next (from `../node_modules/react-native-fbsdk-next`)
   - react-native-mmkv (from `../node_modules/react-native-mmkv`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
@@ -1272,6 +1283,7 @@ DEPENDENCIES:
   - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
   - RNFastImage (from `../node_modules/react-native-fast-image`)
   - "RNFlashList (from `../node_modules/@shopify/flash-list`)"
+  - RNPurchases (from `../node_modules/react-native-purchases`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNSVG (from `../node_modules/react-native-svg`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -1299,6 +1311,8 @@ SPEC REPOS:
     - MMKV
     - MMKVCore
     - OpenSSL-Universal
+    - PurchasesHybridCommon
+    - RevenueCat
     - SDWebImage
     - SDWebImageWebPCoder
     - SocketRocket
@@ -1363,6 +1377,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   react-native-blur:
     :path: "../node_modules/@react-native-community/blur"
+  react-native-config:
+    :path: "../node_modules/react-native-config"
   react-native-fbsdk-next:
     :path: "../node_modules/react-native-fbsdk-next"
   react-native-mmkv:
@@ -1415,6 +1431,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-fast-image"
   RNFlashList:
     :path: "../node_modules/@shopify/flash-list"
+  RNPurchases:
+    :path: "../node_modules/react-native-purchases"
   RNScreens:
     :path: "../node_modules/react-native-screens"
   RNSVG:
@@ -1451,6 +1469,7 @@ SPEC CHECKSUMS:
   MMKV: ed58ad794b3f88c24d604a5b74f3fba17fcbaf74
   MMKVCore: a67a1cede26175c413176f404a7cedec43f96a0b
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
+  PurchasesHybridCommon: f161942f40eb37372c78d7c6524254b0b32ac752
   RCT-Folly: 7169b2b1c44399c76a47b5deaaba715eeeb476c0
   RCTRequired: ca1d7414aba0b27efcfa2ccd37637edb1ab77d96
   RCTTypeSafety: 678e344fb976ff98343ca61dc62e151f3a042292
@@ -1473,6 +1492,7 @@ SPEC CHECKSUMS:
   React-logger: 3eb80a977f0d9669468ef641a5e1fabbc50a09ec
   React-Mapbuffer: 84ea43c6c6232049135b1550b8c60b2faac19fab
   react-native-blur: 799045500f56146afc46245148080e7b7623cb75
+  react-native-config: 86038147314e2e6d10ea9972022aa171e6b1d4d8
   react-native-fbsdk-next: a929da980a4ec199391da637d3d2ce22b6e7779e
   react-native-mmkv: 1fdc81aa70c1aba09370718e6a63a09cbbbac8d2
   react-native-safe-area-context: b97eb6f9e3b7f437806c2ce5983f479f8eb5de4b
@@ -1496,9 +1516,11 @@ SPEC CHECKSUMS:
   React-runtimescheduler: 9636eee762c699ca7c85751a359101797e4c8b3b
   React-utils: d16c1d2251c088ad817996621947d0ac8167b46c
   ReactCommon: 2aa35648354bd4c4665b9a5084a7d37097b89c10
+  RevenueCat: b552a07693b061ff7ea42c8c224f0613755aafe1
   RNCAsyncStorage: 10591b9e0a91eaffee14e69b3721009759235125
   RNFastImage: 5c9c9fed9c076e521b3f509fe79e790418a544e8
   RNFlashList: 4b4b6b093afc0df60ae08f9cbf6ccd4c836c667a
+  RNPurchases: 4ebeacb9d039c1c6095467559499a7b90ab3c4eb
   RNScreens: 17e2f657f1b09a71ec3c821368a04acbb7ebcb46
   RNSVG: ba3e7232f45e34b7b47e74472386cf4e1a676d0a
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d

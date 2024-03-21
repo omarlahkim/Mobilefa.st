@@ -27,6 +27,7 @@
 		04509B5C2BA61E850012DCBB /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04509B492BA61E850012DCBB /* SimpleLineIcons.ttf */; };
 		04509B5D2BA61E850012DCBB /* FontAwesome6_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04509B4A2BA61E850012DCBB /* FontAwesome6_Brands.ttf */; };
 		04509B5E2BA61E850012DCBB /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04509B4B2BA61E850012DCBB /* MaterialIcons.ttf */; };
+		0459C2982BAB5D1200868734 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0459C2972BAB5D1200868734 /* StoreKit.framework */; };
 		112B286EFA834C12A44A4ECB /* BricolageGrotesque-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C51AF00E4EB0459F8758C99B /* BricolageGrotesque-Medium.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -81,6 +82,7 @@
 		04509B492BA61E850012DCBB /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		04509B4A2BA61E850012DCBB /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Brands.ttf; sourceTree = "<group>"; };
 		04509B4B2BA61E850012DCBB /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		0459C2972BAB5D1200868734 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		07BEF81060482B286E9F25AC /* libPods-MobileFast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileFast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* MobileFast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileFast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MobileFast/AppDelegate.h; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2E23D934EE3D14BCE79AE2E /* libPods-MobileFast.a in Frameworks */,
+				0459C2982BAB5D1200868734 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +210,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0459C2972BAB5D1200868734 /* StoreKit.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				07BEF81060482B286E9F25AC /* libPods-MobileFast.a */,
 				B66F8CDD28FBCE80E00AF78A /* libPods-MobileFast-MobileFastTests.a */,

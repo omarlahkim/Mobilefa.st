@@ -1,5 +1,5 @@
-import React from 'react';
-import {useColorScheme} from 'react-native';
+import React, {useEffect} from 'react';
+import {Platform, useColorScheme} from 'react-native';
 import Navigation from './navigation';
 import {persistor, store} from './redux/store/store';
 import {Provider} from 'react-redux';
@@ -10,9 +10,27 @@ import {
   MobileFastTheme,
 } from './themes/mobilefast';
 import {ThemeProvider} from '@rneui/themed';
+import Purchases from 'react-native-purchases';
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
+
+  useEffect(() => {
+    Purchases.setLogLevel(Purchases.LOG_LEVEL.DEBUG);
+    let apiKey = '';
+    switch (Platform.OS) {
+      case 'ios':
+        apiKey = 'YOUR_API_KEY';
+        break;
+      case 'android':
+        apiKey = 'YOUR_API_KEY';
+        break;
+      default:
+        apiKey = 'YOUR_API_KEY';
+    }
+
+    Purchases.configure({apiKey});
+  }, []);
 
   return (
     <Provider store={store}>

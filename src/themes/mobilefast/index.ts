@@ -25,6 +25,8 @@ export const MobileFastDarkTheme = {
 };
 
 export const MobileFastRNETheme = createTheme({
+  lightColors: MobileFastTheme.colors,
+  darkColors: MobileFastDarkTheme.colors,
   components: {
     Text: {
       style: {},
@@ -70,6 +72,24 @@ export const MobileFastRNETheme = createTheme({
         borderBottomWidth: 0,
         borderRadius: 5,
         paddingHorizontal: 10,
+      },
+    },
+    ListItem: {
+      containerStyle: {
+        padding: 5,
+      },
+    },
+    ListItemSubtitle: {
+      style: {
+        fontFamily: 'SpaceGrotesk-Regular',
+        fontSize: 10,
+        color: 'rgba(0, 0, 0, 0.6)',
+      },
+    },
+    ListItemTitle: {
+      style: {
+        fontFamily: 'BricolageGrotesque-Bold',
+        fontSize: 16,
       },
     },
   },

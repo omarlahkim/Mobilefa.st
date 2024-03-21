@@ -3,6 +3,7 @@ import Home from '../../screens/Home';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Profile from 'src/screens/Profile';
 import Settings from 'src/screens/Settings';
+import InAppPurchaseModal from 'src/components/Modals/InAppPurchase';
 
 // Create a stack navigator
 const Tab = createBottomTabNavigator();
@@ -24,4 +25,21 @@ const LoggedInNavigator = () => (
   </Tab.Navigator>
 );
 
-export default LoggedInNavigator;
+const MainStack = createNativeStackNavigator();
+
+const MainNavigator = () => (
+  <MainStack.Navigator>
+    <MainStack.Screen
+      options={{headerShown: false}}
+      name="LoggedInNavigator"
+      component={LoggedInNavigator}
+    />
+    <MainStack.Screen
+      name="InAppPurchaseModal"
+      component={InAppPurchaseModal}
+      options={{headerShown: false, presentation: 'fullScreenModal'}}
+    />
+  </MainStack.Navigator>
+);
+
+export default MainNavigator;
