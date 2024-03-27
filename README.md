@@ -23,15 +23,15 @@ In Progress...
 
 ### To Do
 
-- [ ] Analytics: AWS Amplify
+- [X] Analytics: Amplitude
 - [ ] Monetization: Revenue Cat (In App Purchases) | Admob (Ads Integration: Free Version)
-- [ ] Authentication: AWS Amplify
-- [ ] Navigation: React Navigation
-- [ ] Animations: React Native Gestures
+- [X] Authentication: JWT Based (Email, Oauth2: FacebookSDK)
+- [X] Navigation: React Navigation
+- [ ] Animations: React Native Gestures, Animated
 - [ ] Lottie
-- [ ] Multi Language: i18n
-- [ ] Facebook SDK: Pixel
-- [ ] Dynamic Theming: RN Elements or Native Styling
+- [0] Multi Language: i18n
+- [X] Facebook SDK: Pixel
+- [X] Dynamic Theming: RN Elements or Native Styling
 - [ ] Tests: Jest
 - [ ] Documentation
 
@@ -52,8 +52,18 @@ npm install
 Run the app on iOS by executing the following command in the terminal:
 
 ```bash
-npx react-native run-ios
+npx pod-install
+```
 
+or 
+
+```bash
+cd ios && pod install
+```
+then
+
+```bash
+npx react-native run-ios
 ```
 
 ### For Android:
