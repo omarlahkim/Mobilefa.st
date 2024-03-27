@@ -1,19 +1,64 @@
-import {Button, Icon, Image, ListItem, Text} from '@rneui/themed';
+import React from 'react';
+import {Button, Icon, Image, ListItem} from '@rneui/themed';
 import {
   Dimensions,
   SafeAreaView,
   ScrollView,
-  Touchable,
   TouchableOpacity,
   View,
 } from 'react-native';
 import {styles} from './style';
+import {useEffect, useState} from 'react';
+import Purchases from 'react-native-purchases';
+import {NavigationProp} from '@react-navigation/native';
 
 interface Product {
-  id: string;
+  id: number;
+  title: string;
+  description: string;
+}
+interface Props {
+  navigation: NavigationProp<any>;
 }
 
-export default function InAppPurchaseModal({navigation}) {
+export default function InAppPurchaseModal({navigation}: Props) {
+  const [subscriptions, setSubscriptions] = useState<Product[]>([
+    {
+      id: 1,
+      title: 'Annual - US$24,99',
+      description: 'Inbox Inbox Inbox Inbox Inbox Inbox',
+    },
+    {
+      id: 2,
+      title: 'Monthly - US$2,99',
+      description: 'Inbox Inbox Inbox Inbox Inbox Inbox',
+    },
+    {
+      id: 3,
+      title: 'Weekly - US$0,99',
+      description: 'Inbox Inbox Inbox Inbox Inbox Inbox',
+    },
+    {
+      id: 4,
+      title: 'Daily - US$0,49',
+      description: 'Inbox Inbox Inbox Inbox Inbox Inbox',
+    },
+  ]);
+
+  const [selected, setSelected] = useState<number>(1);
+
+  async function setup() {
+    try {
+      const products = await Purchases.getOfferings();
+      await console.log(products);
+    } catch (e) {
+      console.log(e);
+    }
+  }
+  useEffect(() => {
+    setup();
+  });
+
   const OfferButtonPress = ({id}: Product) => {
     console.log(id);
   };
@@ -23,14 +68,10 @@ export default function InAppPurchaseModal({navigation}) {
   };
 
   return (
-    <SafeAreaView style={styles.modalContainer}>
+    <ScrollView contentContainerStyle={styles.modalContainer}>
       <TouchableOpacity onPress={closeButtonPress} style={styles.closeButton}>
-        <Icon style={styles.closeIcon} color={'black'} name="close" />
+        <Icon size={20} color={'white'} name="close" />
       </TouchableOpacity>
-      <Image
-        source={require('../../../../assets/images/logo.png')}
-        style={styles.logo}
-      />
       <View style={styles.promotionalVideoContainer}>
         <Image
           source={{
@@ -38,62 +79,44 @@ export default function InAppPurchaseModal({navigation}) {
           }}
           style={{
             width: Dimensions.get('window').width,
-            height: 210,
+            height: '100%',
             marginVertical: 10,
           }}
         />
       </View>
       <View style={styles.listContainer}>
-        <ListItem>
-          <Icon name="check" type="material-community" color="green" />
-          <ListItem.Content>
-            <ListItem.Title>Inbox</ListItem.Title>
-            <ListItem.Subtitle>
-              Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox
-              Inbox
-            </ListItem.Subtitle>
-          </ListItem.Content>
-        </ListItem>
-        <ListItem>
-          <Icon name="check" type="material-community" color="green" />
-          <ListItem.Content>
-            <ListItem.Title>Trash</ListItem.Title>
-            <ListItem.Subtitle>
-              Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox
-              Inbox
-            </ListItem.Subtitle>
-          </ListItem.Content>
-        </ListItem>
-        <ListItem>
-          <Icon name="check" type="material-community" color="green" />
-          <ListItem.Content>
-            <ListItem.Title>Trash</ListItem.Title>
-            <ListItem.Subtitle>
-              Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox
-              Inbox
-            </ListItem.Subtitle>
-          </ListItem.Content>
-        </ListItem>
-        <ListItem>
-          <Icon name="check" type="material-community" color="green" />
-          <ListItem.Content>
-            <ListItem.Title>Trash</ListItem.Title>
-            <ListItem.Subtitle>
-              Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox
-              Inbox
-            </ListItem.Subtitle>
-          </ListItem.Content>
-        </ListItem>
-        <ListItem>
-          <Icon name="check" type="material-community" color="green" />
-          <ListItem.Content>
-            <ListItem.Title>Trash</ListItem.Title>
-            <ListItem.Subtitle>
-              Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox
-              Inbox
-            </ListItem.Subtitle>
-          </ListItem.Content>
-        </ListItem>
+        {subscriptions &&
+          subscriptions.map(({id, title, description}) => (
+            <ListItem
+              onPress={() => setSelected(id)}
+              key={id}
+              containerStyle={{
+                backgroundColor: '#000',
+                borderRadius: 10,
+                padding: 10,
+                paddingVertical: selected === id ? 18 : 20,
+                borderWidth: selected === id ? 4 : 0,
+                borderColor: selected === id ? '#ecb933' : 'transparent',
+              }}>
+              <Icon
+                name={selected === id ? 'check' : 'circle-outline'}
+                style={{
+                  backgroundColor: selected === id ? '#ecb933' : 'transparent',
+                  borderRadius: 50,
+                }}
+                type="material-community"
+                color={selected === id ? 'black' : 'white'}
+              />
+              <ListItem.Content>
+                <ListItem.Title style={{color: '#ecb933'}}>
+                  {title}
+                </ListItem.Title>
+                <ListItem.Subtitle style={{color: '#F8F8F8'}}>
+                  {description}
+                </ListItem.Subtitle>
+              </ListItem.Content>
+            </ListItem>
+          ))}
       </View>
 
       <View style={styles.buttonContainer}>
@@ -102,21 +125,15 @@ export default function InAppPurchaseModal({navigation}) {
           size="md"
           type="solid"
           onPress={() => OfferButtonPress({id: '1'})}>
-          Offer 1
+          Purchase
         </Button>
         <Button
           size="md"
-          type="solid"
+          type="clear"
           onPress={() => OfferButtonPress({id: '2'})}>
-          Offer 2
-        </Button>
-        <Button
-          size="md"
-          type="solid"
-          onPress={() => OfferButtonPress({id: '3'})}>
-          Offer 3
+          Restore Purchases
         </Button>
       </View>
-    </SafeAreaView>
+    </ScrollView>
   );
 }

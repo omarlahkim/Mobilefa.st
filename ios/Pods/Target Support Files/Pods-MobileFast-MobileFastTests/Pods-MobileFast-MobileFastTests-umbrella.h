@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_MobileFast_MobileFastTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_MobileFast_MobileFastTestsVersionString[];
+FOUNDATION_EXPORT double Pods_mobilefast_mobilefastTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_mobilefast_mobilefastTestsVersionString[];
 

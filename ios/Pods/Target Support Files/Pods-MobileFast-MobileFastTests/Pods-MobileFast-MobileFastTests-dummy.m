@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_MobileFast_MobileFastTests : NSObject
+@interface PodsDummy_Pods_mobilefast_mobilefastTests : NSObject
 @end
-@implementation PodsDummy_Pods_MobileFast_MobileFastTests
+@implementation PodsDummy_Pods_mobilefast_mobilefastTests
 @end

@@ -25,7 +25,7 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'MobileFast' do
+target 'mobilefast' do
   config = use_native_modules!
 
   use_react_native!(
@@ -39,10 +39,10 @@ target 'MobileFast' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'MobileFastTests' do
+  target 'mobilefastTests' do
     inherit! :complete
     # Pods for testing
-  end
+  end  
 
   post_install do |installer|
     # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
@@ -52,4 +52,9 @@ target 'MobileFast' do
       :mac_catalyst_enabled => false
     )
   end
+  
+end
+
+target 'OneSignalNotificationServiceExtension' do
+  pod 'OneSignalXCFramework', '>= 5.0.0', '< 6.0'
 end

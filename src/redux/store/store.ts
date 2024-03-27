@@ -3,6 +3,8 @@ import {combineReducers} from 'redux';
 import {persistReducer, persistStore} from 'redux-persist';
 import {reduxStorage} from './storage';
 import authReducer from '../features/auth';
+import {authApi} from '../api/auth';
+import {setupListeners} from '@reduxjs/toolkit/query';
 
 const persistConfig = {
   key: 'root',
@@ -11,6 +13,7 @@ const persistConfig = {
 
 const reducers = combineReducers({
   auth: authReducer,
+  [authApi.reducerPath]: authApi.reducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, reducers);
@@ -20,7 +23,7 @@ export const store = configureStore({
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
       serializableCheck: false,
-    }),
+    }).concat([authApi.middleware]),
 });
 
 export const persistor = persistStore(store);
@@ -29,3 +32,5 @@ export const persistor = persistStore(store);
 export type RootState = ReturnType<typeof store.getState>;
 // Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
 export type AppDispatch = typeof store.dispatch;
+// optional, but required for refetchOnFocus/refetchOnReconnect behaviors
+setupListeners(store.dispatch);

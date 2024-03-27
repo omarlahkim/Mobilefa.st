@@ -5,6 +5,7 @@ import {
 import {Login, Signup} from '../../screens';
 import {useSelector} from 'react-redux';
 import {RootState} from '../../redux/store/store';
+import EmailLogin from 'src/screens/Login/Email';
 
 const UnLoggedNavigator = () => {
   // Create a stack navigator
@@ -22,6 +23,11 @@ const UnLoggedNavigator = () => {
   return (
     <AuthStack.Navigator>
       <AuthStack.Screen name="Login" component={Login} options={options} />
+      <AuthStack.Screen
+        name="EmailLogin"
+        component={EmailLogin}
+        options={options}
+      />
       <AuthStack.Screen name="SignUp" component={Signup} options={options} />
     </AuthStack.Navigator>
   );

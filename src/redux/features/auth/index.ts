@@ -15,11 +15,11 @@ export const authSlice = createSlice({
   name: 'counter',
   initialState,
   reducers: {
-    login: (state, action: PayloadAction<string>) => {
+    confirmAuth: (state, action: PayloadAction<string>) => {
       state.token = action.payload;
       state.isLogged = true;
     },
-    logout: state => {
+    destroyAuth: state => {
       state.token = '';
       state.isLogged = false;
     },
@@ -27,6 +27,6 @@ export const authSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const {login, logout} = authSlice.actions;
+export const {confirmAuth, destroyAuth} = authSlice.actions;
 
 export default authSlice.reducer;

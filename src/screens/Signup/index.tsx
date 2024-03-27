@@ -1,7 +1,6 @@
-import react, {ComponentProps} from 'react';
+import React, {ComponentProps} from 'react';
 import {ScrollView, View} from 'react-native';
 import styles from './styles';
-import {login} from '../../redux/features/auth';
 import {useDispatch} from 'react-redux';
 import {Button, Icon, Image, Input, Text} from '@rneui/themed';
 import {track} from '@amplitude/analytics-react-native';
@@ -72,9 +71,10 @@ export default function SignUp({navigation}: ComponentProps<any>) {
         </Text>
       </View>
       <View style={styles.actionsContainer}>
-        <Input placeholder="Email" />
-        <Input placeholder="Verify your Email" />
+        <Input placeholder="Username" />
+        <Input placeholder="Email eg. example@email.com" />
         <Input placeholder="Password" secureTextEntry />
+        <Input placeholder="Verify your Password" secureTextEntry />
         <Button
           title="Sign Up"
           onPress={() => {

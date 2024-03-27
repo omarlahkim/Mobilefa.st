@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>MobileFast</string>
+	<string>mobilefast</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -22,6 +22,8 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>FacebookClientToken</key>
+	<string>8cf1cbf96a34ff37594847cc0ad9b2d0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -32,21 +34,7 @@
 		<true/>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string/>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string>armv7</string>
-	</array>
-	<key>UISupportedInterfaceOrientations</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<false/>
+	<string></string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>BricolageGrotesque-Bold.ttf</string>
@@ -61,25 +49,91 @@
 		<string>SpaceGrotesk-Medium.ttf</string>
 		<string>SpaceGrotesk-Regular.ttf</string>
 		<string>SpaceGrotesk-SemiBold.ttf</string>
-    <string>AntDesign.ttf</string>
-      <string>Entypo.ttf</string>
-      <string>EvilIcons.ttf</string>
-      <string>Feather.ttf</string>
-      <string>FontAwesome.ttf</string>
-      <string>FontAwesome5_Brands.ttf</string>
-      <string>FontAwesome5_Regular.ttf</string>
-      <string>FontAwesome5_Solid.ttf</string>
-      <string>FontAwesome6_Brands.ttf</string>
-      <string>FontAwesome6_Regular.ttf</string>
-      <string>FontAwesome6_Solid.ttf</string>
-      <string>Foundation.ttf</string>
-      <string>Ionicons.ttf</string>
-      <string>MaterialIcons.ttf</string>
-      <string>MaterialCommunityIcons.ttf</string>
-      <string>SimpleLineIcons.ttf</string>
-      <string>Octicons.ttf</string>
-      <string>Zocial.ttf</string>
-      <string>Fontisto.ttf</string>
+		<string>AntDesign.ttf</string>
+		<string>Entypo.ttf</string>
+		<string>EvilIcons.ttf</string>
+		<string>Feather.ttf</string>
+		<string>FontAwesome.ttf</string>
+		<string>FontAwesome5_Brands.ttf</string>
+		<string>FontAwesome5_Regular.ttf</string>
+		<string>FontAwesome5_Solid.ttf</string>
+		<string>FontAwesome6_Brands.ttf</string>
+		<string>FontAwesome6_Regular.ttf</string>
+		<string>FontAwesome6_Solid.ttf</string>
+		<string>Foundation.ttf</string>
+		<string>Ionicons.ttf</string>
+		<string>MaterialIcons.ttf</string>
+		<string>MaterialCommunityIcons.ttf</string>
+		<string>SimpleLineIcons.ttf</string>
+		<string>Octicons.ttf</string>
+		<string>Zocial.ttf</string>
+		<string>Fontisto.ttf</string>
 	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+  <key>FacebookAppID</key>
+  <string>1328949311117779</string>
+  <key>FacebookDisplayName</key>
+  <string>Mobilefast</string>
+  <key>CFBundleURLTypes</key>
+  <array>
+      <dict>
+          <key>CFBundleURLSchemes</key>
+          <array>
+              <string>fb1328949311117779</string>
+          </array>
+      </dict>
+  </array>
+  <key>NSAppTransportSecurity</key>
+  <dict>
+      <key>NSExceptionDomains</key>
+      <dict>
+          <key>facebook.com</key>
+          <dict>
+              <key>NSIncludesSubdomains</key>
+              <true/>
+              <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+              <false/>
+          </dict>
+          <key>fbcdn.net</key>
+          <dict>
+              <key>NSIncludesSubdomains</key>
+              <true/>
+              <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+              <false/>
+          </dict>
+          <key>mobilefa.st</key>
+          <dict>
+              <key>NSIncludesSubdomains</key>
+              <true/>
+              <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+              <false/>
+          </dict>
+      </dict>
+  </dict>
+  <key>LSApplicationQueriesSchemes</key>
+  <array>
+    <string>fbapi</string>
+    <string>fb-messenger-api</string>
+    <string>fbauth2</string>
+    <string>fbshareextension</string>
+  </array>
+      
 </dict>
 </plist>

@@ -1,5 +1,5 @@
-module Pods_MobileFast_MobileFastTests {
-  umbrella header "Pods-MobileFast-MobileFastTests-umbrella.h"
+module Pods_mobilefast_mobilefastTests {
+  umbrella header "Pods-mobilefast-mobilefastTests-umbrella.h"
 
   export *
   module * { export * }

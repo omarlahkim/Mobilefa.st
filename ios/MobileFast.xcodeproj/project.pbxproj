@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* MobileFastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MobileFastTests.m */; };
+		00E356F31AD99517003FC87E /* mobilefastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mobilefastTests.m */; };
 		04509B4C2BA61E850012DCBB /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04509B392BA61E850012DCBB /* Fontisto.ttf */; };
 		04509B4D2BA61E850012DCBB /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04509B3A2BA61E850012DCBB /* Octicons.ttf */; };
 		04509B4E2BA61E850012DCBB /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04509B3B2BA61E850012DCBB /* Feather.ttf */; };
@@ -28,20 +28,25 @@
 		04509B5D2BA61E850012DCBB /* FontAwesome6_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04509B4A2BA61E850012DCBB /* FontAwesome6_Brands.ttf */; };
 		04509B5E2BA61E850012DCBB /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04509B4B2BA61E850012DCBB /* MaterialIcons.ttf */; };
 		0459C2982BAB5D1200868734 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0459C2972BAB5D1200868734 /* StoreKit.framework */; };
+		0494DE2D2BB0B878006EA87D /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 0494DE2C2BB0B878006EA87D /* Configuration.storekit */; };
+		0494DE2F2BB0B96B006EA87D /* StoreKitTestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = 0494DE2E2BB0B96B006EA87D /* StoreKitTestCertificate.cer */; };
+		0494DE372BB379C8006EA87D /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494DE362BB379C8006EA87D /* NotificationService.swift */; };
+		0494DE3B2BB379C8006EA87D /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0494DE342BB379C8006EA87D /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		112B286EFA834C12A44A4ECB /* BricolageGrotesque-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C51AF00E4EB0459F8758C99B /* BricolageGrotesque-Medium.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		44A2BC1ABEBB47FD87EDA067 /* SpaceGrotesk-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0D89F9F6A794BD3BD78A7EA /* SpaceGrotesk-Regular.ttf */; };
+		49FA0A5EEDA69F3833F053FC /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 202CE533D947377A20EE7703 /* libPods-OneSignalNotificationServiceExtension.a */; };
 		66BE16A969AB4A9587462F3C /* SpaceGrotesk-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F47870B821B74B4AA3AC7F97 /* SpaceGrotesk-Light.ttf */; };
 		774C7E82D4AB40AC84845525 /* BricolageGrotesque-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 377B1EF0E48F47D1A1045C53 /* BricolageGrotesque-SemiBold.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		8889D84BE81BAB7BC625D059 /* libPods-MobileFast-MobileFastTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B66F8CDD28FBCE80E00AF78A /* libPods-MobileFast-MobileFastTests.a */; };
+		8889D84BE81BAB7BC625D059 /* libPods-mobilefast-mobilefastTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B66F8CDD28FBCE80E00AF78A /* libPods-mobilefast-mobilefastTests.a */; };
 		8B98AD37DF634096A503A0FF /* SpaceGrotesk-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BF833D655384593AB667902 /* SpaceGrotesk-Bold.ttf */; };
 		8E48CC49B8994D8CA101FA5E /* BricolageGrotesque-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73EF8E0512C6471C828F1AAE /* BricolageGrotesque-Bold.ttf */; };
 		B47B8210D33B4408BF31ADD5 /* BricolageGrotesque-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C41C77AB2FA546898ADE14DF /* BricolageGrotesque-Light.ttf */; };
 		C08F01957BE94E37B7E6CCE8 /* BricolageGrotesque-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00CF37E5593B4E5FBF35C44D /* BricolageGrotesque-ExtraLight.ttf */; };
-		C2E23D934EE3D14BCE79AE2E /* libPods-MobileFast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07BEF81060482B286E9F25AC /* libPods-MobileFast.a */; };
+		C2E23D934EE3D14BCE79AE2E /* libPods-mobilefast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07BEF81060482B286E9F25AC /* libPods-mobilefast.a */; };
 		C40AE97CD243401B8972410E /* SpaceGrotesk-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D28B06E3043499BAF9F8DFB /* SpaceGrotesk-SemiBold.ttf */; };
 		C46D4A0C9C2F4C3F968D8200 /* SpaceGrotesk-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCC61DBB27DE4634B5172427 /* SpaceGrotesk-Medium.ttf */; };
 		D57604966EBD484F85E48EAD /* BricolageGrotesque-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D5002BA2D6641A98C9B0A5C /* BricolageGrotesque-ExtraBold.ttf */; };
@@ -54,15 +59,36 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = MobileFast;
+			remoteInfo = mobilefast;
+		};
+		0494DE392BB379C8006EA87D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0494DE332BB379C8006EA87D;
+			remoteInfo = OneSignalNotificationServiceExtension;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0494DE3F2BB379C8006EA87D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0494DE3B2BB379C8006EA87D /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		00CF37E5593B4E5FBF35C44D /* BricolageGrotesque-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BricolageGrotesque-ExtraLight.ttf"; path = "../assets/fonts/BricolageGrotesque-ExtraLight.ttf"; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* MobileFastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileFastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* mobilefastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mobilefastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* MobileFastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobileFastTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* mobilefastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mobilefastTests.m; sourceTree = "<group>"; };
 		04509B392BA61E850012DCBB /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
 		04509B3A2BA61E850012DCBB /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
 		04509B3B2BA61E850012DCBB /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
@@ -83,29 +109,39 @@
 		04509B4A2BA61E850012DCBB /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Brands.ttf; sourceTree = "<group>"; };
 		04509B4B2BA61E850012DCBB /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		0459C2972BAB5D1200868734 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		07BEF81060482B286E9F25AC /* libPods-MobileFast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileFast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07F961A680F5B00A75B9A /* MobileFast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileFast.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MobileFast/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = MobileFast/AppDelegate.mm; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MobileFast/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MobileFast/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MobileFast/main.m; sourceTree = "<group>"; };
-		201F0A2EE9BD79488EEA6A70 /* Pods-MobileFast-MobileFastTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileFast-MobileFastTests.debug.xcconfig"; path = "Target Support Files/Pods-MobileFast-MobileFastTests/Pods-MobileFast-MobileFastTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0494DE2C2BB0B878006EA87D /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		0494DE2E2BB0B96B006EA87D /* StoreKitTestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitTestCertificate.cer; sourceTree = "<group>"; };
+		0494DE342BB379C8006EA87D /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0494DE362BB379C8006EA87D /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		0494DE382BB379C8006EA87D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0494DE402BB37A29006EA87D /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+		0494DE412BB37A36006EA87D /* mobilefast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = mobilefast.entitlements; path = mobilefast/mobilefast.entitlements; sourceTree = "<group>"; };
+		07BEF81060482B286E9F25AC /* libPods-mobilefast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobilefast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* mobilefast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mobilefast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = mobilefast/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = mobilefast/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = mobilefast/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = mobilefast/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = mobilefast/main.m; sourceTree = "<group>"; };
+		201F0A2EE9BD79488EEA6A70 /* Pods-mobilefast-mobilefastTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilefast-mobilefastTests.debug.xcconfig"; path = "Target Support Files/Pods-mobilefast-mobilefastTests/Pods-mobilefast-mobilefastTests.debug.xcconfig"; sourceTree = "<group>"; };
+		202CE533D947377A20EE7703 /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		377B1EF0E48F47D1A1045C53 /* BricolageGrotesque-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BricolageGrotesque-SemiBold.ttf"; path = "../assets/fonts/BricolageGrotesque-SemiBold.ttf"; sourceTree = "<group>"; };
 		4BF833D655384593AB667902 /* SpaceGrotesk-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SpaceGrotesk-Bold.ttf"; path = "../assets/fonts/SpaceGrotesk-Bold.ttf"; sourceTree = "<group>"; };
 		4D5002BA2D6641A98C9B0A5C /* BricolageGrotesque-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BricolageGrotesque-ExtraBold.ttf"; path = "../assets/fonts/BricolageGrotesque-ExtraBold.ttf"; sourceTree = "<group>"; };
-		4DE9A88492C1F5056D4D56C1 /* Pods-MobileFast-MobileFastTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileFast-MobileFastTests.release.xcconfig"; path = "Target Support Files/Pods-MobileFast-MobileFastTests/Pods-MobileFast-MobileFastTests.release.xcconfig"; sourceTree = "<group>"; };
+		4DE9A88492C1F5056D4D56C1 /* Pods-mobilefast-mobilefastTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilefast-mobilefastTests.release.xcconfig"; path = "Target Support Files/Pods-mobilefast-mobilefastTests/Pods-mobilefast-mobilefastTests.release.xcconfig"; sourceTree = "<group>"; };
+		5DFBA9E5961D43BB11D8970C /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		6D28B06E3043499BAF9F8DFB /* SpaceGrotesk-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SpaceGrotesk-SemiBold.ttf"; path = "../assets/fonts/SpaceGrotesk-SemiBold.ttf"; sourceTree = "<group>"; };
 		73EF8E0512C6471C828F1AAE /* BricolageGrotesque-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BricolageGrotesque-Bold.ttf"; path = "../assets/fonts/BricolageGrotesque-Bold.ttf"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MobileFast/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		930B723332BB9CACC9FBABC2 /* Pods-MobileFast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileFast.debug.xcconfig"; path = "Target Support Files/Pods-MobileFast/Pods-MobileFast.debug.xcconfig"; sourceTree = "<group>"; };
-		A5CF0B7F7D4195D1000BA76D /* Pods-MobileFast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileFast.release.xcconfig"; path = "Target Support Files/Pods-MobileFast/Pods-MobileFast.release.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = mobilefast/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		930B723332BB9CACC9FBABC2 /* Pods-mobilefast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilefast.debug.xcconfig"; path = "Target Support Files/Pods-mobilefast/Pods-mobilefast.debug.xcconfig"; sourceTree = "<group>"; };
+		A5CF0B7F7D4195D1000BA76D /* Pods-mobilefast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilefast.release.xcconfig"; path = "Target Support Files/Pods-mobilefast/Pods-mobilefast.release.xcconfig"; sourceTree = "<group>"; };
 		AAFED1A73DF84DCEB2D10B80 /* BricolageGrotesque-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BricolageGrotesque-Regular.ttf"; path = "../assets/fonts/BricolageGrotesque-Regular.ttf"; sourceTree = "<group>"; };
-		B66F8CDD28FBCE80E00AF78A /* libPods-MobileFast-MobileFastTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileFast-MobileFastTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B66F8CDD28FBCE80E00AF78A /* libPods-mobilefast-mobilefastTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobilefast-mobilefastTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC61DBB27DE4634B5172427 /* SpaceGrotesk-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SpaceGrotesk-Medium.ttf"; path = "../assets/fonts/SpaceGrotesk-Medium.ttf"; sourceTree = "<group>"; };
 		C0D89F9F6A794BD3BD78A7EA /* SpaceGrotesk-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SpaceGrotesk-Regular.ttf"; path = "../assets/fonts/SpaceGrotesk-Regular.ttf"; sourceTree = "<group>"; };
 		C41C77AB2FA546898ADE14DF /* BricolageGrotesque-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BricolageGrotesque-Light.ttf"; path = "../assets/fonts/BricolageGrotesque-Light.ttf"; sourceTree = "<group>"; };
 		C51AF00E4EB0459F8758C99B /* BricolageGrotesque-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BricolageGrotesque-Medium.ttf"; path = "../assets/fonts/BricolageGrotesque-Medium.ttf"; sourceTree = "<group>"; };
+		E2DAF85108778F0DCFC7CFEA /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F47870B821B74B4AA3AC7F97 /* SpaceGrotesk-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SpaceGrotesk-Light.ttf"; path = "../assets/fonts/SpaceGrotesk-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,7 +151,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8889D84BE81BAB7BC625D059 /* libPods-MobileFast-MobileFastTests.a in Frameworks */,
+				8889D84BE81BAB7BC625D059 /* libPods-mobilefast-mobilefastTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0494DE312BB379C8006EA87D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49FA0A5EEDA69F3833F053FC /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2E23D934EE3D14BCE79AE2E /* libPods-MobileFast.a in Frameworks */,
+				C2E23D934EE3D14BCE79AE2E /* libPods-mobilefast.a in Frameworks */,
 				0459C2982BAB5D1200868734 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,13 +175,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* MobileFastTests */ = {
+		00E356EF1AD99517003FC87E /* mobilefastTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* MobileFastTests.m */,
+				00E356F21AD99517003FC87E /* mobilefastTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = MobileFastTests;
+			path = mobilefastTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -175,17 +219,30 @@
 			path = "../node_modules/react-native-vector-icons/Fonts";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* MobileFast */ = {
+		0494DE352BB379C8006EA87D /* OneSignalNotificationServiceExtension */ = {
 			isa = PBXGroup;
 			children = (
+				0494DE402BB37A29006EA87D /* OneSignalNotificationServiceExtension.entitlements */,
+				0494DE362BB379C8006EA87D /* NotificationService.swift */,
+				0494DE382BB379C8006EA87D /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* mobilefast */ = {
+			isa = PBXGroup;
+			children = (
+				0494DE412BB37A36006EA87D /* mobilefast.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				0494DE2C2BB0B878006EA87D /* Configuration.storekit */,
+				0494DE2E2BB0B96B006EA87D /* StoreKitTestCertificate.cer */,
 			);
-			name = MobileFast;
+			name = mobilefast;
 			sourceTree = "<group>";
 		};
 		1F34BB7760324333A45C0CEF /* Resources */ = {
@@ -212,8 +269,9 @@
 			children = (
 				0459C2972BAB5D1200868734 /* StoreKit.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				07BEF81060482B286E9F25AC /* libPods-MobileFast.a */,
-				B66F8CDD28FBCE80E00AF78A /* libPods-MobileFast-MobileFastTests.a */,
+				07BEF81060482B286E9F25AC /* libPods-mobilefast.a */,
+				B66F8CDD28FBCE80E00AF78A /* libPods-mobilefast-mobilefastTests.a */,
+				202CE533D947377A20EE7703 /* libPods-OneSignalNotificationServiceExtension.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -229,9 +287,10 @@
 			isa = PBXGroup;
 			children = (
 				04509B382BA61E850012DCBB /* Fonts */,
-				13B07FAE1A68108700A75B9A /* MobileFast */,
+				13B07FAE1A68108700A75B9A /* mobilefast */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* MobileFastTests */,
+				00E356EF1AD99517003FC87E /* mobilefastTests */,
+				0494DE352BB379C8006EA87D /* OneSignalNotificationServiceExtension */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -245,8 +304,9 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* MobileFast.app */,
-				00E356EE1AD99517003FC87E /* MobileFastTests.xctest */,
+				13B07F961A680F5B00A75B9A /* mobilefast.app */,
+				00E356EE1AD99517003FC87E /* mobilefastTests.xctest */,
+				0494DE342BB379C8006EA87D /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -254,10 +314,12 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				930B723332BB9CACC9FBABC2 /* Pods-MobileFast.debug.xcconfig */,
-				A5CF0B7F7D4195D1000BA76D /* Pods-MobileFast.release.xcconfig */,
-				201F0A2EE9BD79488EEA6A70 /* Pods-MobileFast-MobileFastTests.debug.xcconfig */,
-				4DE9A88492C1F5056D4D56C1 /* Pods-MobileFast-MobileFastTests.release.xcconfig */,
+				930B723332BB9CACC9FBABC2 /* Pods-mobilefast.debug.xcconfig */,
+				A5CF0B7F7D4195D1000BA76D /* Pods-mobilefast.release.xcconfig */,
+				201F0A2EE9BD79488EEA6A70 /* Pods-mobilefast-mobilefastTests.debug.xcconfig */,
+				4DE9A88492C1F5056D4D56C1 /* Pods-mobilefast-mobilefastTests.release.xcconfig */,
+				5DFBA9E5961D43BB11D8970C /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				E2DAF85108778F0DCFC7CFEA /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -265,9 +327,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* MobileFastTests */ = {
+		00E356ED1AD99517003FC87E /* mobilefastTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MobileFastTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "mobilefastTests" */;
 			buildPhases = (
 				999E1E02374007C69E283FBA /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -281,14 +343,32 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = MobileFastTests;
-			productName = MobileFastTests;
-			productReference = 00E356EE1AD99517003FC87E /* MobileFastTests.xctest */;
+			name = mobilefastTests;
+			productName = mobilefastTests;
+			productReference = 00E356EE1AD99517003FC87E /* mobilefastTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* MobileFast */ = {
+		0494DE332BB379C8006EA87D /* OneSignalNotificationServiceExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MobileFast" */;
+			buildConfigurationList = 0494DE3C2BB379C8006EA87D /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				CBA82D242274A6F0FB3BF9E3 /* [CP] Check Pods Manifest.lock */,
+				0494DE302BB379C8006EA87D /* Sources */,
+				0494DE312BB379C8006EA87D /* Frameworks */,
+				0494DE322BB379C8006EA87D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 0494DE342BB379C8006EA87D /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		13B07F861A680F5B00A75B9A /* mobilefast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "mobilefast" */;
 			buildPhases = (
 				436E2A3B63558B29C2FDFCCA /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -297,14 +377,16 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				139E84625A95057545A3E2F9 /* [CP] Embed Pods Frameworks */,
 				D48E2295B6D6545870C8A4B2 /* [CP] Copy Pods Resources */,
+				0494DE3F2BB379C8006EA87D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0494DE3A2BB379C8006EA87D /* PBXTargetDependency */,
 			);
-			name = MobileFast;
-			productName = MobileFast;
-			productReference = 13B07F961A680F5B00A75B9A /* MobileFast.app */;
+			name = mobilefast;
+			productName = mobilefast;
+			productReference = 13B07F961A680F5B00A75B9A /* mobilefast.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -313,11 +395,15 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					0494DE332BB379C8006EA87D = {
+						CreatedOnToolsVersion = 15.0.1;
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
@@ -337,14 +423,22 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* MobileFast */,
-				00E356ED1AD99517003FC87E /* MobileFastTests */,
+				13B07F861A680F5B00A75B9A /* mobilefast */,
+				00E356ED1AD99517003FC87E /* mobilefastTests */,
+				0494DE332BB379C8006EA87D /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0494DE322BB379C8006EA87D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -370,6 +464,7 @@
 				04509B542BA61E850012DCBB /* Foundation.ttf in Resources */,
 				04509B532BA61E850012DCBB /* AntDesign.ttf in Resources */,
 				04509B5B2BA61E850012DCBB /* FontAwesome6_Solid.ttf in Resources */,
+				0494DE2F2BB0B96B006EA87D /* StoreKitTestCertificate.cer in Resources */,
 				04509B4F2BA61E850012DCBB /* FontAwesome6_Regular.ttf in Resources */,
 				04509B512BA61E850012DCBB /* FontAwesome5_Brands.ttf in Resources */,
 				B47B8210D33B4408BF31ADD5 /* BricolageGrotesque-Light.ttf in Resources */,
@@ -386,6 +481,7 @@
 				C46D4A0C9C2F4C3F968D8200 /* SpaceGrotesk-Medium.ttf in Resources */,
 				04509B582BA61E850012DCBB /* FontAwesome.ttf in Resources */,
 				44A2BC1ABEBB47FD87EDA067 /* SpaceGrotesk-Regular.ttf in Resources */,
+				0494DE2D2BB0B878006EA87D /* Configuration.storekit in Resources */,
 				04509B572BA61E850012DCBB /* FontAwesome5_Regular.ttf in Resources */,
 				C40AE97CD243401B8972410E /* SpaceGrotesk-SemiBold.ttf in Resources */,
 			);
@@ -416,15 +512,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MobileFast/Pods-MobileFast-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-mobilefast/Pods-mobilefast-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MobileFast/Pods-MobileFast-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-mobilefast/Pods-mobilefast-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobileFast/Pods-MobileFast-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mobilefast/Pods-mobilefast-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		436E2A3B63558B29C2FDFCCA /* [CP] Check Pods Manifest.lock */ = {
@@ -442,7 +538,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MobileFast-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-mobilefast-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -455,15 +551,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MobileFast-MobileFastTests/Pods-MobileFast-MobileFastTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-mobilefast-mobilefastTests/Pods-mobilefast-mobilefastTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MobileFast-MobileFastTests/Pods-MobileFast-MobileFastTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-mobilefast-mobilefastTests/Pods-mobilefast-mobilefastTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobileFast-MobileFastTests/Pods-MobileFast-MobileFastTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mobilefast-mobilefastTests/Pods-mobilefast-mobilefastTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		999E1E02374007C69E283FBA /* [CP] Check Pods Manifest.lock */ = {
@@ -481,7 +577,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MobileFast-MobileFastTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-mobilefast-mobilefastTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -494,15 +590,37 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MobileFast-MobileFastTests/Pods-MobileFast-MobileFastTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-mobilefast-mobilefastTests/Pods-mobilefast-mobilefastTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MobileFast-MobileFastTests/Pods-MobileFast-MobileFastTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-mobilefast-mobilefastTests/Pods-mobilefast-mobilefastTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobileFast-MobileFastTests/Pods-MobileFast-MobileFastTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mobilefast-mobilefastTests/Pods-mobilefast-mobilefastTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBA82D242274A6F0FB3BF9E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D48E2295B6D6545870C8A4B2 /* [CP] Copy Pods Resources */ = {
@@ -511,15 +629,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MobileFast/Pods-MobileFast-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-mobilefast/Pods-mobilefast-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MobileFast/Pods-MobileFast-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-mobilefast/Pods-mobilefast-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobileFast/Pods-MobileFast-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mobilefast/Pods-mobilefast-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -529,7 +647,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* MobileFastTests.m in Sources */,
+				00E356F31AD99517003FC87E /* mobilefastTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0494DE302BB379C8006EA87D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0494DE372BB379C8006EA87D /* NotificationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,22 +673,27 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* MobileFast */;
+			target = 13B07F861A680F5B00A75B9A /* mobilefast */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		0494DE3A2BB379C8006EA87D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0494DE332BB379C8006EA87D /* OneSignalNotificationServiceExtension */;
+			targetProxy = 0494DE392BB379C8006EA87D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 201F0A2EE9BD79488EEA6A70 /* Pods-MobileFast-MobileFastTests.debug.xcconfig */;
+			baseConfigurationReference = 201F0A2EE9BD79488EEA6A70 /* Pods-mobilefast-mobilefastTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = MobileFastTests/Info.plist;
+				INFOPLIST_FILE = mobilefastTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -574,19 +705,19 @@
 					"-lc++",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lahkimomar.mobilefast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileFast.app/MobileFast";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mobilefast.app/mobilefast";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DE9A88492C1F5056D4D56C1 /* Pods-MobileFast-MobileFastTests.release.xcconfig */;
+			baseConfigurationReference = 4DE9A88492C1F5056D4D56C1 /* Pods-mobilefast-mobilefastTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = MobileFastTests/Info.plist;
+				INFOPLIST_FILE = mobilefastTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -598,21 +729,110 @@
 					"-lc++",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lahkimomar.mobilefast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileFast.app/MobileFast";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mobilefast.app/mobilefast";
+			};
+			name = Release;
+		};
+		0494DE3D2BB379C8006EA87D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DFBA9E5961D43BB11D8970C /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8D49CNS5D8;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lahkimomar.mobilefast.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0494DE3E2BB379C8006EA87D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2DAF85108778F0DCFC7CFEA /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8D49CNS5D8;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lahkimomar.mobilefast.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 930B723332BB9CACC9FBABC2 /* Pods-MobileFast.debug.xcconfig */;
+			baseConfigurationReference = 930B723332BB9CACC9FBABC2 /* Pods-mobilefast.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = mobilefast/mobilefast.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8D49CNS5D8;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = MobileFast/Info.plist;
+				INFOPLIST_FILE = mobilefast/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = mobilefast;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -623,8 +843,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = MobileFast;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lahkimomar.mobilefast;
+				PRODUCT_NAME = mobilefast;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -633,12 +853,16 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5CF0B7F7D4195D1000BA76D /* Pods-MobileFast.release.xcconfig */;
+			baseConfigurationReference = A5CF0B7F7D4195D1000BA76D /* Pods-mobilefast.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = mobilefast/mobilefast.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = MobileFast/Info.plist;
+				DEVELOPMENT_TEAM = 8D49CNS5D8;
+				INFOPLIST_FILE = mobilefast/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = mobilefast;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -649,8 +873,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = MobileFast;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lahkimomar.mobilefast;
+				PRODUCT_NAME = mobilefast;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -812,7 +1036,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MobileFastTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "mobilefastTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -821,7 +1045,16 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MobileFast" */ = {
+		0494DE3C2BB379C8006EA87D /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0494DE3D2BB379C8006EA87D /* Debug */,
+				0494DE3E2BB379C8006EA87D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "mobilefast" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,

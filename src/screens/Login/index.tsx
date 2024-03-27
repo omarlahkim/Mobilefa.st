@@ -1,21 +1,39 @@
-import react, {ComponentProps} from 'react';
-import {ScrollView, View} from 'react-native';
-import styles from './styles';
-import {login} from '../../redux/features/auth';
-import {useDispatch} from 'react-redux';
-import {Image, Text} from '@rneui/themed';
-import SocialLoginButton from '../../components/Common/UnauthenticatedSection/SocialLoginButton';
-import BaseView from '../../components/Common/UnauthenticatedSection/BaseView';
+import {Text} from '@rneui/themed';
+import React, {ComponentProps} from 'react';
+import {View} from 'react-native';
+import {LoginManager} from 'react-native-fbsdk-next';
 import Or from 'src/components/Common/UI/Or';
-import {useTranslation} from 'react-i18next';
+import BaseView from '../../components/Common/UnauthenticatedSection/BaseView';
+import SocialLoginButton from '../../components/Common/UnauthenticatedSection/SocialLoginButton';
+import styles from './styles';
 
 export default function Login({navigation}: ComponentProps<any>) {
-  const dispatch = useDispatch();
-  const {t} = useTranslation();
+  // const dispatch = useDispatch();
+  // const {t} = useTranslation();
 
   const navigateToSignUp = () => {
     console.log('Navigating to SignUp');
     navigation.navigate('SignUp');
+  };
+
+  const facebookLogin = async () => {
+    try {
+      const result = await LoginManager.logInWithPermissions([
+        'public_profile',
+        // 'email',
+      ]);
+      if (result.isCancelled) {
+        console.log('Login cancelled');
+      } else {
+        console.log(
+          'Login success with permissions: ',
+          result.grantedPermissions,
+        );
+        console.log(JSON.stringify(result));
+      }
+    } catch (error) {
+      console.log('Login fail with error: ', error);
+    }
   };
 
   return (
@@ -36,19 +54,11 @@ export default function Login({navigation}: ComponentProps<any>) {
       }>
       <View style={styles.actionsContainer}>
         <SocialLoginButton
-          color="white"
-          text="Sign In with Google"
-          icon="google"
-          tcolor="#4285F4"
-          type="antdesign"
-          onPress={console.log}
-        />
-        <SocialLoginButton
-          color="black"
-          text="Sign In with Apple"
-          icon="apple"
+          color="#3B5998"
+          text="Sign In with Facebook"
+          icon="facebook"
           tcolor="white"
-          onPress={console.log}
+          onPress={facebookLogin}
         />
         <Or />
         <SocialLoginButton
@@ -56,7 +66,7 @@ export default function Login({navigation}: ComponentProps<any>) {
           text="Sign In using Email"
           icon="email"
           tcolor="white"
-          onPress={() => dispatch(login('AZEEE'))}
+          onPress={() => navigation.navigate('EmailLogin')}
         />
       </View>
       <View style={styles.SignUpContainer}>
@@ -71,3 +81,4 @@ export default function Login({navigation}: ComponentProps<any>) {
     </BaseView>
   );
 }
+// dispatch(login('AZEEE'))

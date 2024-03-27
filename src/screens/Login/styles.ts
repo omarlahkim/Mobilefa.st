@@ -8,11 +8,11 @@ const styles = StyleSheet.create({
   },
   actionsContainer: {
     width: '94%',
-    gap: 10,
+    gap: 1,
     justifyContent: 'space-between',
     alignContent: 'center',
     alignItems: 'center',
-    padding: 10,
+    padding: 15,
     backgroundColor: '#FFBB00',
     borderRadius: 10,
   },
