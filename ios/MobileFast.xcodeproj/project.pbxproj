@@ -37,20 +37,20 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		44A2BC1ABEBB47FD87EDA067 /* SpaceGrotesk-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0D89F9F6A794BD3BD78A7EA /* SpaceGrotesk-Regular.ttf */; };
-		49FA0A5EEDA69F3833F053FC /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 202CE533D947377A20EE7703 /* libPods-OneSignalNotificationServiceExtension.a */; };
+		474A14C5671F7F47708F5E77 /* libPods-mobilefast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 947E79E5561E9437DDD915A0 /* libPods-mobilefast.a */; };
 		66BE16A969AB4A9587462F3C /* SpaceGrotesk-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F47870B821B74B4AA3AC7F97 /* SpaceGrotesk-Light.ttf */; };
 		774C7E82D4AB40AC84845525 /* BricolageGrotesque-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 377B1EF0E48F47D1A1045C53 /* BricolageGrotesque-SemiBold.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		8889D84BE81BAB7BC625D059 /* libPods-mobilefast-mobilefastTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B66F8CDD28FBCE80E00AF78A /* libPods-mobilefast-mobilefastTests.a */; };
 		8B98AD37DF634096A503A0FF /* SpaceGrotesk-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BF833D655384593AB667902 /* SpaceGrotesk-Bold.ttf */; };
 		8E48CC49B8994D8CA101FA5E /* BricolageGrotesque-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73EF8E0512C6471C828F1AAE /* BricolageGrotesque-Bold.ttf */; };
+		971A91B22CFB8995C840895A /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5924BEBF5D5750CF508A25 /* libPods-OneSignalNotificationServiceExtension.a */; };
 		B47B8210D33B4408BF31ADD5 /* BricolageGrotesque-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C41C77AB2FA546898ADE14DF /* BricolageGrotesque-Light.ttf */; };
 		C08F01957BE94E37B7E6CCE8 /* BricolageGrotesque-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00CF37E5593B4E5FBF35C44D /* BricolageGrotesque-ExtraLight.ttf */; };
-		C2E23D934EE3D14BCE79AE2E /* libPods-mobilefast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07BEF81060482B286E9F25AC /* libPods-mobilefast.a */; };
 		C40AE97CD243401B8972410E /* SpaceGrotesk-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D28B06E3043499BAF9F8DFB /* SpaceGrotesk-SemiBold.ttf */; };
 		C46D4A0C9C2F4C3F968D8200 /* SpaceGrotesk-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCC61DBB27DE4634B5172427 /* SpaceGrotesk-Medium.ttf */; };
 		D57604966EBD484F85E48EAD /* BricolageGrotesque-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D5002BA2D6641A98C9B0A5C /* BricolageGrotesque-ExtraBold.ttf */; };
 		EA8343CB772F4D1B8C1F9E85 /* BricolageGrotesque-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFED1A73DF84DCEB2D10B80 /* BricolageGrotesque-Regular.ttf */; };
+		FB583FFC9292F33B686ECD97 /* libPods-mobilefast-mobilefastTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F042E6B78DD273FC1300B03E /* libPods-mobilefast-mobilefastTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,33 +116,33 @@
 		0494DE382BB379C8006EA87D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0494DE402BB37A29006EA87D /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
 		0494DE412BB37A36006EA87D /* mobilefast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = mobilefast.entitlements; path = mobilefast/mobilefast.entitlements; sourceTree = "<group>"; };
-		07BEF81060482B286E9F25AC /* libPods-mobilefast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobilefast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C1DFE77614CA3D42B312A7C /* Pods-mobilefast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilefast.debug.xcconfig"; path = "Target Support Files/Pods-mobilefast/Pods-mobilefast.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* mobilefast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mobilefast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = mobilefast/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = mobilefast/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = mobilefast/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = mobilefast/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = mobilefast/main.m; sourceTree = "<group>"; };
-		201F0A2EE9BD79488EEA6A70 /* Pods-mobilefast-mobilefastTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilefast-mobilefastTests.debug.xcconfig"; path = "Target Support Files/Pods-mobilefast-mobilefastTests/Pods-mobilefast-mobilefastTests.debug.xcconfig"; sourceTree = "<group>"; };
-		202CE533D947377A20EE7703 /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		377B1EF0E48F47D1A1045C53 /* BricolageGrotesque-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BricolageGrotesque-SemiBold.ttf"; path = "../assets/fonts/BricolageGrotesque-SemiBold.ttf"; sourceTree = "<group>"; };
 		4BF833D655384593AB667902 /* SpaceGrotesk-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SpaceGrotesk-Bold.ttf"; path = "../assets/fonts/SpaceGrotesk-Bold.ttf"; sourceTree = "<group>"; };
 		4D5002BA2D6641A98C9B0A5C /* BricolageGrotesque-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BricolageGrotesque-ExtraBold.ttf"; path = "../assets/fonts/BricolageGrotesque-ExtraBold.ttf"; sourceTree = "<group>"; };
-		4DE9A88492C1F5056D4D56C1 /* Pods-mobilefast-mobilefastTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilefast-mobilefastTests.release.xcconfig"; path = "Target Support Files/Pods-mobilefast-mobilefastTests/Pods-mobilefast-mobilefastTests.release.xcconfig"; sourceTree = "<group>"; };
-		5DFBA9E5961D43BB11D8970C /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		6D28B06E3043499BAF9F8DFB /* SpaceGrotesk-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SpaceGrotesk-SemiBold.ttf"; path = "../assets/fonts/SpaceGrotesk-SemiBold.ttf"; sourceTree = "<group>"; };
+		6D3D5633A9CD2FC4A9DB88D6 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		73EF8E0512C6471C828F1AAE /* BricolageGrotesque-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BricolageGrotesque-Bold.ttf"; path = "../assets/fonts/BricolageGrotesque-Bold.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = mobilefast/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		930B723332BB9CACC9FBABC2 /* Pods-mobilefast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilefast.debug.xcconfig"; path = "Target Support Files/Pods-mobilefast/Pods-mobilefast.debug.xcconfig"; sourceTree = "<group>"; };
-		A5CF0B7F7D4195D1000BA76D /* Pods-mobilefast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilefast.release.xcconfig"; path = "Target Support Files/Pods-mobilefast/Pods-mobilefast.release.xcconfig"; sourceTree = "<group>"; };
+		915A50084024664FDDD3C6B8 /* Pods-mobilefast-mobilefastTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilefast-mobilefastTests.release.xcconfig"; path = "Target Support Files/Pods-mobilefast-mobilefastTests/Pods-mobilefast-mobilefastTests.release.xcconfig"; sourceTree = "<group>"; };
+		947E79E5561E9437DDD915A0 /* libPods-mobilefast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobilefast.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFED1A73DF84DCEB2D10B80 /* BricolageGrotesque-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BricolageGrotesque-Regular.ttf"; path = "../assets/fonts/BricolageGrotesque-Regular.ttf"; sourceTree = "<group>"; };
-		B66F8CDD28FBCE80E00AF78A /* libPods-mobilefast-mobilefastTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobilefast-mobilefastTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE517E34EBC0DEAD35EE395E /* Pods-mobilefast-mobilefastTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilefast-mobilefastTests.debug.xcconfig"; path = "Target Support Files/Pods-mobilefast-mobilefastTests/Pods-mobilefast-mobilefastTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AFABA267C4EA46946BC1674F /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		BCC61DBB27DE4634B5172427 /* SpaceGrotesk-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SpaceGrotesk-Medium.ttf"; path = "../assets/fonts/SpaceGrotesk-Medium.ttf"; sourceTree = "<group>"; };
+		BCD47DD462370B2E7EB4B50F /* Pods-mobilefast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilefast.release.xcconfig"; path = "Target Support Files/Pods-mobilefast/Pods-mobilefast.release.xcconfig"; sourceTree = "<group>"; };
 		C0D89F9F6A794BD3BD78A7EA /* SpaceGrotesk-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SpaceGrotesk-Regular.ttf"; path = "../assets/fonts/SpaceGrotesk-Regular.ttf"; sourceTree = "<group>"; };
 		C41C77AB2FA546898ADE14DF /* BricolageGrotesque-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BricolageGrotesque-Light.ttf"; path = "../assets/fonts/BricolageGrotesque-Light.ttf"; sourceTree = "<group>"; };
 		C51AF00E4EB0459F8758C99B /* BricolageGrotesque-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BricolageGrotesque-Medium.ttf"; path = "../assets/fonts/BricolageGrotesque-Medium.ttf"; sourceTree = "<group>"; };
-		E2DAF85108778F0DCFC7CFEA /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		CE5924BEBF5D5750CF508A25 /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F042E6B78DD273FC1300B03E /* libPods-mobilefast-mobilefastTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobilefast-mobilefastTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47870B821B74B4AA3AC7F97 /* SpaceGrotesk-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SpaceGrotesk-Light.ttf"; path = "../assets/fonts/SpaceGrotesk-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,7 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8889D84BE81BAB7BC625D059 /* libPods-mobilefast-mobilefastTests.a in Frameworks */,
+				FB583FFC9292F33B686ECD97 /* libPods-mobilefast-mobilefastTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49FA0A5EEDA69F3833F053FC /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */,
+				971A91B22CFB8995C840895A /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,8 +167,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2E23D934EE3D14BCE79AE2E /* libPods-mobilefast.a in Frameworks */,
 				0459C2982BAB5D1200868734 /* StoreKit.framework in Frameworks */,
+				474A14C5671F7F47708F5E77 /* libPods-mobilefast.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,9 +269,9 @@
 			children = (
 				0459C2972BAB5D1200868734 /* StoreKit.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				07BEF81060482B286E9F25AC /* libPods-mobilefast.a */,
-				B66F8CDD28FBCE80E00AF78A /* libPods-mobilefast-mobilefastTests.a */,
-				202CE533D947377A20EE7703 /* libPods-OneSignalNotificationServiceExtension.a */,
+				CE5924BEBF5D5750CF508A25 /* libPods-OneSignalNotificationServiceExtension.a */,
+				947E79E5561E9437DDD915A0 /* libPods-mobilefast.a */,
+				F042E6B78DD273FC1300B03E /* libPods-mobilefast-mobilefastTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -314,12 +314,12 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				930B723332BB9CACC9FBABC2 /* Pods-mobilefast.debug.xcconfig */,
-				A5CF0B7F7D4195D1000BA76D /* Pods-mobilefast.release.xcconfig */,
-				201F0A2EE9BD79488EEA6A70 /* Pods-mobilefast-mobilefastTests.debug.xcconfig */,
-				4DE9A88492C1F5056D4D56C1 /* Pods-mobilefast-mobilefastTests.release.xcconfig */,
-				5DFBA9E5961D43BB11D8970C /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
-				E2DAF85108778F0DCFC7CFEA /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+				AFABA267C4EA46946BC1674F /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				6D3D5633A9CD2FC4A9DB88D6 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+				0C1DFE77614CA3D42B312A7C /* Pods-mobilefast.debug.xcconfig */,
+				BCD47DD462370B2E7EB4B50F /* Pods-mobilefast.release.xcconfig */,
+				AE517E34EBC0DEAD35EE395E /* Pods-mobilefast-mobilefastTests.debug.xcconfig */,
+				915A50084024664FDDD3C6B8 /* Pods-mobilefast-mobilefastTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -331,12 +331,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "mobilefastTests" */;
 			buildPhases = (
-				999E1E02374007C69E283FBA /* [CP] Check Pods Manifest.lock */,
+				653C6FDF97AD35A831FC567D /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C1620476C0B40F411BA6992C /* [CP] Embed Pods Frameworks */,
-				6728F23340381013A85E6510 /* [CP] Copy Pods Resources */,
+				34D0C588EECE70735FF20E1F /* [CP] Embed Pods Frameworks */,
+				628C00ABF7AC1E1AC03236D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -352,7 +352,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0494DE3C2BB379C8006EA87D /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
 			buildPhases = (
-				CBA82D242274A6F0FB3BF9E3 /* [CP] Check Pods Manifest.lock */,
+				47DD0B52EE255921063849F5 /* [CP] Check Pods Manifest.lock */,
 				0494DE302BB379C8006EA87D /* Sources */,
 				0494DE312BB379C8006EA87D /* Frameworks */,
 				0494DE322BB379C8006EA87D /* Resources */,
@@ -370,14 +370,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "mobilefast" */;
 			buildPhases = (
-				436E2A3B63558B29C2FDFCCA /* [CP] Check Pods Manifest.lock */,
+				24ED3C3A61C6CCAAC42EAE88 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				139E84625A95057545A3E2F9 /* [CP] Embed Pods Frameworks */,
-				D48E2295B6D6545870C8A4B2 /* [CP] Copy Pods Resources */,
 				0494DE3F2BB379C8006EA87D /* Embed Foundation Extensions */,
+				808A9635D62A4D05506433A7 /* [CP] Embed Pods Frameworks */,
+				B684B51780543720E20E26CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -395,8 +395,9 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1210;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -506,24 +507,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		139E84625A95057545A3E2F9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-mobilefast/Pods-mobilefast-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-mobilefast/Pods-mobilefast-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mobilefast/Pods-mobilefast-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		436E2A3B63558B29C2FDFCCA /* [CP] Check Pods Manifest.lock */ = {
+		24ED3C3A61C6CCAAC42EAE88 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -545,46 +529,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6728F23340381013A85E6510 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-mobilefast-mobilefastTests/Pods-mobilefast-mobilefastTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-mobilefast-mobilefastTests/Pods-mobilefast-mobilefastTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mobilefast-mobilefastTests/Pods-mobilefast-mobilefastTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		999E1E02374007C69E283FBA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-mobilefast-mobilefastTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C1620476C0B40F411BA6992C /* [CP] Embed Pods Frameworks */ = {
+		34D0C588EECE70735FF20E1F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -601,7 +546,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mobilefast-mobilefastTests/Pods-mobilefast-mobilefastTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CBA82D242274A6F0FB3BF9E3 /* [CP] Check Pods Manifest.lock */ = {
+		47DD0B52EE255921063849F5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -623,7 +568,63 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D48E2295B6D6545870C8A4B2 /* [CP] Copy Pods Resources */ = {
+		628C00ABF7AC1E1AC03236D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mobilefast-mobilefastTests/Pods-mobilefast-mobilefastTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mobilefast-mobilefastTests/Pods-mobilefast-mobilefastTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mobilefast-mobilefastTests/Pods-mobilefast-mobilefastTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		653C6FDF97AD35A831FC567D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mobilefast-mobilefastTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		808A9635D62A4D05506433A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mobilefast/Pods-mobilefast-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mobilefast/Pods-mobilefast-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mobilefast/Pods-mobilefast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B684B51780543720E20E26CF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -686,8 +687,9 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 201F0A2EE9BD79488EEA6A70 /* Pods-mobilefast-mobilefastTests.debug.xcconfig */;
+			baseConfigurationReference = AE517E34EBC0DEAD35EE395E /* Pods-mobilefast-mobilefastTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -713,8 +715,9 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DE9A88492C1F5056D4D56C1 /* Pods-mobilefast-mobilefastTests.release.xcconfig */;
+			baseConfigurationReference = 915A50084024664FDDD3C6B8 /* Pods-mobilefast-mobilefastTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = mobilefastTests/Info.plist;
@@ -737,7 +740,7 @@
 		};
 		0494DE3D2BB379C8006EA87D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DFBA9E5961D43BB11D8970C /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			baseConfigurationReference = AFABA267C4EA46946BC1674F /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -780,7 +783,7 @@
 		};
 		0494DE3E2BB379C8006EA87D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2DAF85108778F0DCFC7CFEA /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			baseConfigurationReference = 6D3D5633A9CD2FC4A9DB88D6 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -822,7 +825,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 930B723332BB9CACC9FBABC2 /* Pods-mobilefast.debug.xcconfig */;
+			baseConfigurationReference = 0C1DFE77614CA3D42B312A7C /* Pods-mobilefast.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -853,7 +856,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5CF0B7F7D4195D1000BA76D /* Pods-mobilefast.release.xcconfig */;
+			baseConfigurationReference = BCD47DD462370B2E7EB4B50F /* Pods-mobilefast.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1028,6 +1031,7 @@
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};

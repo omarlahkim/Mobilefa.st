@@ -1,9 +1,12 @@
-import React, {ComponentProps} from 'react';
-import {ScrollView, View} from 'react-native';
+import React, {ComponentProps, useEffect, useState} from 'react';
+import {Alert, ScrollView, View} from 'react-native';
 import styles from './styles';
 import {useDispatch} from 'react-redux';
 import {Button, Icon, Image, Input, Text} from '@rneui/themed';
 import {track} from '@amplitude/analytics-react-native';
+import {useRegisterMutation} from 'src/redux/api/auth';
+import {responseHandler} from 'src/utils/errorHandling';
+import {confirmAuth} from 'src/redux/features/auth';
 
 interface IloginButtonProps {
   color: string;
@@ -34,11 +37,48 @@ function SocialLoginButton({
 
 export default function SignUp({navigation}: ComponentProps<any>) {
   const dispatch = useDispatch();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState('');
+  const [verifyPassword, setVerifyPassword] = useState('');
+  const [fullName, setFullName] = useState('');
+
+  const [register, {isError, isLoading, isSuccess, isUninitialized, data}] =
+    useRegisterMutation();
+
+  useEffect(() => {
+    responseHandler(
+      isSuccess,
+      isError,
+      isLoading,
+      isUninitialized,
+      data,
+      () => {
+        console.log('Register success');
+        dispatch(confirmAuth(data.access));
+      },
+      () => console.log('Register failed'),
+    );
+  }, [isSuccess, isError, isLoading, isUninitialized, data, dispatch]);
 
   const navigateToSignUp = () => {
     console.log('Navigating to SignUp');
     track('Navigating to SignUp');
     navigation.navigate('SignUp');
+  };
+
+  const _signUp = async () => {
+    if (password !== verifyPassword) {
+      Alert.alert('Passwords do not match');
+      return;
+    }
+    register({
+      password1: password,
+      password2: verifyPassword,
+      username,
+      email,
+      // full_name: fullName,
+    });
   };
 
   return (
@@ -71,15 +111,34 @@ export default function SignUp({navigation}: ComponentProps<any>) {
         </Text>
       </View>
       <View style={styles.actionsContainer}>
-        <Input placeholder="Username" />
-        <Input placeholder="Email eg. example@email.com" />
-        <Input placeholder="Password" secureTextEntry />
-        <Input placeholder="Verify your Password" secureTextEntry />
-        <Button
-          title="Sign Up"
-          onPress={() => {
-            dispatch(login(''));
-          }}></Button>
+        <Input
+          onChangeText={setFullName}
+          value={fullName}
+          placeholder="Full Name (First and Last)"
+        />
+        <Input
+          onChangeText={setUsername}
+          value={username}
+          placeholder="Username"
+        />
+        <Input
+          onChangeText={setEmail}
+          value={email}
+          placeholder="Email eg. example@email.com"
+        />
+        <Input
+          onChangeText={setPassword}
+          value={password}
+          placeholder="Password"
+          secureTextEntry
+        />
+        <Input
+          onChangeText={setVerifyPassword}
+          value={verifyPassword}
+          placeholder="Verify your Password"
+          secureTextEntry
+        />
+        <Button title="Sign Up" onPress={_signUp}></Button>
       </View>
       <View style={styles.SignUpContainer}>
         <Text h3>Already have an account?</Text>

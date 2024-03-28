@@ -20,10 +20,10 @@ export default function BaseView({
         source={require('../../../../assets/images/logo.png')}
       />
       <View>
-        <Text h1 style={{textAlign: 'center'}}>
+        <Text h1 style={{textAlign: 'center', paddingHorizontal: 5}}>
           {description}
         </Text>
-        <Text h4 style={{textAlign: 'center'}}>
+        <Text h4 style={{textAlign: 'center', paddingVertical: 5}}>
           No we didn't mistake the word "Faster", Neither "Fast"! 😂
         </Text>
       </View>

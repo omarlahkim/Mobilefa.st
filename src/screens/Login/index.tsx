@@ -1,34 +1,64 @@
 import {Text} from '@rneui/themed';
-import React, {ComponentProps} from 'react';
+import React, {ComponentProps, useEffect} from 'react';
 import {View} from 'react-native';
-import {LoginManager} from 'react-native-fbsdk-next';
+import {AccessToken, LoginManager, Profile} from 'react-native-fbsdk-next';
 import Or from 'src/components/Common/UI/Or';
 import BaseView from '../../components/Common/UnauthenticatedSection/BaseView';
 import SocialLoginButton from '../../components/Common/UnauthenticatedSection/SocialLoginButton';
 import styles from './styles';
+import {useOauth2LoginMutation} from 'src/redux/api/auth';
+import {responseHandler} from 'src/utils/errorHandling';
+import {confirmAuth} from 'src/redux/features/auth';
+import {useDispatch} from 'react-redux';
 
 export default function Login({navigation}: ComponentProps<any>) {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   // const {t} = useTranslation();
+
+  const [oauth2Login, {isError, isLoading, isSuccess, isUninitialized, data}] =
+    useOauth2LoginMutation();
 
   const navigateToSignUp = () => {
     console.log('Navigating to SignUp');
     navigation.navigate('SignUp');
   };
 
+  useEffect(() => {
+    responseHandler(
+      isSuccess,
+      isError,
+      isLoading,
+      isUninitialized,
+      data,
+      () => {
+        console.log(data.access);
+        dispatch(confirmAuth(data.access));
+      },
+      () => {
+        console.log('Login failed');
+      },
+    );
+  }, [isSuccess, isError, isLoading, isUninitialized, data, dispatch]);
+
   const facebookLogin = async () => {
     try {
       const result = await LoginManager.logInWithPermissions([
         'public_profile',
-        // 'email',
+        'email',
       ]);
       if (result.isCancelled) {
         console.log('Login cancelled');
       } else {
-        console.log(
-          'Login success with permissions: ',
-          result.grantedPermissions,
-        );
+        await AccessToken.getCurrentAccessToken().then(({accessToken}) => {
+          console.log(accessToken.toString());
+          oauth2Login({
+            provider: 'facebook',
+            access_token: accessToken.toString(),
+          });
+        });
+        await Profile.getCurrentProfile().then(profile => {
+          console.log(profile);
+        });
         console.log(JSON.stringify(result));
       }
     } catch (error) {
@@ -49,7 +79,7 @@ export default function Login({navigation}: ComponentProps<any>) {
             }}>
             Faster
           </Text>{' '}
-          Fast ⚡️ Mobile Applications that generate money 🤑
+          Fast ⚡️ Mobile Applications that generate money 💰
         </>
       }>
       <View style={styles.actionsContainer}>

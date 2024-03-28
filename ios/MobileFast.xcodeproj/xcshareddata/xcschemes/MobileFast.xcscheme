@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1210"
+   LastUpgradeVersion = "1500"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -17,7 +17,7 @@
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
                BuildableName = "mobilefast.app"
                BlueprintName = "mobilefast"
-               ReferencedContainer = "container:MobileFast.xcodeproj">
+               ReferencedContainer = "container:mobilefast.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
                BuildableName = "mobilefastTests.xctest"
                BlueprintName = "mobilefastTests"
-               ReferencedContainer = "container:MobileFast.xcodeproj">
+               ReferencedContainer = "container:mobilefast.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,7 +57,7 @@
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
             BuildableName = "mobilefast.app"
             BlueprintName = "mobilefast"
-            ReferencedContainer = "container:MobileFast.xcodeproj">
+            ReferencedContainer = "container:mobilefast.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <StoreKitConfigurationFileReference
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
             BuildableName = "mobilefast.app"
             BlueprintName = "mobilefast"
-            ReferencedContainer = "container:MobileFast.xcodeproj">
+            ReferencedContainer = "container:mobilefast.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -13,10 +13,8 @@
       "redux/*": ["./src/redux/*"],
       "screens/*": ["./src/screens/*"],
       "theme/*": ["./src/theme/*"],
-      "utils/*": ["./src/utils/*"],
+      "utils/*": ["./src/utils/*"]
     },
-    "compilerOptions": {
     "jsx": "react"
-  }
   }
 }

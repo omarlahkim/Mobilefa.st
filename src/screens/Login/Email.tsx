@@ -49,7 +49,7 @@ export default function EmailLogin() {
             }}>
             Faster
           </Text>{' '}
-          Fast ⚡️ Mobile Applications that generate money 🤑
+          Fast ⚡️ Mobile Applications that generate money 💰
         </>
       }>
       <View style={styles.actionsContainer}>
