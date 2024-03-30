@@ -2,11 +2,10 @@ import {Button, Icon, Text} from '@rneui/themed';
 import React from 'react';
 import {ScrollView, View} from 'react-native';
 import FastImage from 'react-native-fast-image';
-import {useDispatch} from 'react-redux';
-import {destroyAuth} from 'src/redux/features/auth';
 import {styles} from './styles';
+import {logoutService} from 'src/services/user';
+
 export default function Profile() {
-  const dispatch = useDispatch();
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <View
@@ -35,7 +34,7 @@ export default function Profile() {
           type="clear"
           title="Log Out"
           onPress={() => {
-            dispatch(destroyAuth());
+            logoutService();
           }}
         />
       </View>

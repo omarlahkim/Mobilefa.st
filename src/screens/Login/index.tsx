@@ -44,7 +44,6 @@ export default function Login({navigation}: ComponentProps<any>) {
     try {
       const result = await LoginManager.logInWithPermissions([
         'public_profile',
-        'email',
       ]);
       if (result.isCancelled) {
         console.log('Login cancelled');

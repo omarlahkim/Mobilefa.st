@@ -1,20 +1,13 @@
 import {AppEventsLogger} from 'react-native-fbsdk-next';
 
-// General Event
-export function logEvent(name: string, parameters: any) {
-  AppEventsLogger.logEvent(name, parameters);
-}
-const {
-  AddedPaymentInfo,
-  AdClick,
-  AdImpression,
-  AddedToWishlist,
-  AddedToCart,
-  SubmitApplication,
-  ViewedContent,
-} = AppEventsLogger.AppEvents;
+const {} = AppEventsLogger.AppEvents;
+
+const {logEvent, logPurchase} = AppEventsLogger;
 
 // Custom Event
+export function logCustomEventEvent(eventName: string, parameters: any) {
+  logEvent(eventName, parameters);
+}
 
 // Purchase Event
 export function logPurchaseEvent(
@@ -22,22 +15,5 @@ export function logPurchaseEvent(
   currency: string,
   parameters: any,
 ) {
-  AppEventsLogger.logPurchase(purchaseAmount, currency, parameters);
+  logPurchase(purchaseAmount, currency, parameters);
 }
-//  Event
-
-// Registration Event
-
-// Registration Event
-
-// Registration Event
-
-// Registration Event
-
-// Registration Event
-
-// Registration Event
-
-// Registration Event
-
-// Registration Event

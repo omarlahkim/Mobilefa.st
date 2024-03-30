@@ -16,7 +16,7 @@ export default function EmailLogin() {
   // useDispatch
   const dispatch = useDispatch();
 
-  const [login, {isError, isLoading, isSuccess, isUninitialized, data}] =
+  const [login, {isError, isLoading, isSuccess, isUninitialized, data, error}] =
     useLoginMutation();
 
   useEffect(() => {
@@ -32,9 +32,10 @@ export default function EmailLogin() {
       },
       () => {
         console.log('Login failed');
+        console.log(error);
       },
     );
-  }, [isSuccess, isError, isLoading, isUninitialized, data, dispatch]);
+  }, [isSuccess, isError, isLoading, isUninitialized, data, dispatch, error]);
 
   return (
     <BaseView

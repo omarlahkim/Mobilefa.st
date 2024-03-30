@@ -1,9 +1,15 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
+import {Platform} from 'react-native';
+
+const BASE_URL_IOS = 'http://localhost:8000/';
+const BASE_URL_ANDROID = 'http://10.0.2.2:8000/';
 
 // Define a service using a base URL and expected endpoints
 export const authApi = createApi({
   reducerPath: 'authApi',
-  baseQuery: fetchBaseQuery({baseUrl: 'http://192.168.1.24:8000/'}),
+  baseQuery: fetchBaseQuery({
+    baseUrl: Platform.OS == 'ios' ? BASE_URL_IOS : BASE_URL_ANDROID,
+  }),
   endpoints: builder => ({
     login: builder.mutation<any, any>({
       query: ({...body}: any) => ({
