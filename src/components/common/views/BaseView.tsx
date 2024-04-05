@@ -1,29 +1,22 @@
+import React from 'react';
 import {Image, Text} from '@rneui/themed';
 import {ComponentProps} from 'react';
 import {ScrollView, StyleSheet, View} from 'react-native';
 
-export default function BaseView({
-  description,
-  short_description,
-  children,
-}: ComponentProps<any>) {
+export default function BaseView({description, children}: ComponentProps<any>) {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Image
         width={100}
         height={100}
-        style={{
-          height: 55,
-          width: 240,
-          resizeMode: 'contain',
-        }}
+        style={styles.logo}
         source={require('../../../../assets/images/logo.png')}
       />
       <View>
-        <Text h1 style={{textAlign: 'center', paddingHorizontal: 5}}>
+        <Text h1 style={styles.description}>
           {description}
         </Text>
-        <Text h4 style={{textAlign: 'center', paddingVertical: 5}}>
+        <Text h4 style={styles.subDescription}>
           No we didn't mistake the word "Faster", Neither "Fast"! 😂
         </Text>
       </View>
@@ -33,11 +26,7 @@ export default function BaseView({
         <Image
           width={100}
           height={100}
-          style={{
-            height: 55,
-            width: 90,
-            resizeMode: 'contain',
-          }}
+          style={styles.poweredByImage}
           source={require('../../../../assets/images/digitlift.png')}
         />
       </View>
@@ -56,5 +45,28 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: 10,
+  },
+  underlined: {
+    textDecorationStyle: 'solid',
+    textDecorationLine: 'underline',
+    textDecorationColor: '#FFBB00',
+  },
+  poweredByImage: {
+    height: 55,
+    width: 90,
+    resizeMode: 'contain',
+  },
+  description: {
+    textAlign: 'center',
+    paddingHorizontal: 5,
+  },
+  subDescription: {
+    textAlign: 'center',
+    paddingVertical: 5,
+  },
+  logo: {
+    height: 55,
+    width: 240,
+    resizeMode: 'contain',
   },
 });

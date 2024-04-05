@@ -1,101 +1,42 @@
 import {Text} from '@rneui/themed';
-import React, {ComponentProps, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import {View} from 'react-native';
-import {AccessToken, LoginManager, Profile} from 'react-native-fbsdk-next';
-import Or from 'src/components/Common/UI/Or';
-import BaseView from '../../components/Common/UnauthenticatedSection/BaseView';
-import SocialLoginButton from '../../components/Common/UnauthenticatedSection/SocialLoginButton';
+import Or from 'src/components/common/ui/orseparator/OrSeparator';
+import BaseView from '../../components/common/views/BaseView';
+import SocialLoginButton from '../../components/common/ui/buttons/SocialLoginButton';
 import styles from './styles';
 import {useOauth2LoginMutation} from 'src/redux/api/auth';
-import {responseHandler} from 'src/utils/errorHandling';
-import {confirmAuth} from 'src/redux/features/auth';
-import {useDispatch} from 'react-redux';
+import {getFaceBookToken, handleFacebookLoginResponse} from 'src/services/auth';
+import {navigateToEmailLogin, navigateToSignUp} from 'src/navigation/services';
 
-export default function Login({navigation}: ComponentProps<any>) {
-  const dispatch = useDispatch();
+export default function Login() {
   // const {t} = useTranslation();
+  const [oauth2Login, Status] = useOauth2LoginMutation();
 
-  const [oauth2Login, {isError, isLoading, isSuccess, isUninitialized, data}] =
-    useOauth2LoginMutation();
-
-  const navigateToSignUp = () => {
-    console.log('Navigating to SignUp');
-    navigation.navigate('SignUp');
+  const _handleFacebookLogin = async () => {
+    await getFaceBookToken(oauth2Login);
   };
-
   useEffect(() => {
-    responseHandler(
-      isSuccess,
-      isError,
-      isLoading,
-      isUninitialized,
-      data,
-      () => {
-        console.log(data.access);
-        dispatch(confirmAuth(data.access));
-      },
-      () => {
-        console.log('Login failed');
-      },
-    );
-  }, [isSuccess, isError, isLoading, isUninitialized, data, dispatch]);
-
-  const facebookLogin = async () => {
-    try {
-      const result = await LoginManager.logInWithPermissions([
-        'public_profile',
-      ]);
-      if (result.isCancelled) {
-        console.log('Login cancelled');
-      } else {
-        await AccessToken.getCurrentAccessToken().then(({accessToken}) => {
-          console.log(accessToken.toString());
-          oauth2Login({
-            provider: 'facebook',
-            access_token: accessToken.toString(),
-          });
-        });
-        await Profile.getCurrentProfile().then(profile => {
-          console.log(profile);
-        });
-        console.log(JSON.stringify(result));
-      }
-    } catch (error) {
-      console.log('Login fail with error: ', error);
-    }
-  };
+    handleFacebookLoginResponse(Status);
+  }, [Status]);
 
   return (
-    <BaseView
-      description={
-        <>
-          Develop{' '}
-          <Text
-            style={{
-              textDecorationStyle: 'solid',
-              textDecorationLine: 'underline',
-              textDecorationColor: '#FFBB00',
-            }}>
-            Faster
-          </Text>{' '}
-          Fast ⚡️ Mobile Applications that generate money 💰
-        </>
-      }>
+    <BaseView description="Develop Faster Fast ⚡️ Mobile Applications that generate money 💰">
       <View style={styles.actionsContainer}>
         <SocialLoginButton
           color="#3B5998"
           text="Sign In with Facebook"
           icon="facebook"
-          tcolor="white"
-          onPress={facebookLogin}
+          textColor="white"
+          onPress={_handleFacebookLogin}
         />
         <Or />
         <SocialLoginButton
           color="#8221FF"
           text="Sign In using Email"
           icon="email"
-          tcolor="white"
-          onPress={() => navigation.navigate('EmailLogin')}
+          textColor="white"
+          onPress={navigateToEmailLogin}
         />
       </View>
       <View style={styles.SignUpContainer}>
@@ -103,7 +44,7 @@ export default function Login({navigation}: ComponentProps<any>) {
         <SocialLoginButton
           color="#FFBB00"
           text="Create your account"
-          tcolor="black"
+          textColor="black"
           onPress={navigateToSignUp}
         />
       </View>

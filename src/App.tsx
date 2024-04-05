@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {Platform, useColorScheme} from 'react-native';
-import Navigation from './navigation';
+import Navigation from './navigation/main';
 import {persistor, store} from './redux/store/store';
 import {Provider} from 'react-redux';
 import {PersistGate} from 'redux-persist/integration/react';

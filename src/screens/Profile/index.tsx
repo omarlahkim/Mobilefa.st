@@ -3,7 +3,7 @@ import React from 'react';
 import {ScrollView, View} from 'react-native';
 import FastImage from 'react-native-fast-image';
 import {styles} from './styles';
-import {logoutService} from 'src/services/user';
+import {logOutUser} from 'src/services/user';
 
 export default function Profile() {
   return (
@@ -30,13 +30,7 @@ export default function Profile() {
             priority: FastImage.priority.normal,
           }}
         />
-        <Button
-          type="clear"
-          title="Log Out"
-          onPress={() => {
-            logoutService();
-          }}
-        />
+        <Button type="clear" title="Log Out" onPress={logOutUser} />
       </View>
     </ScrollView>
   );
