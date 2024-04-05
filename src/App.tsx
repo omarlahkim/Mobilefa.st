@@ -1,17 +1,14 @@
 import React, {useEffect} from 'react';
 import {Platform, useColorScheme} from 'react-native';
-import Navigation from './navigation';
+import Navigation from './navigation/main';
 import {persistor, store} from './redux/store/store';
 import {Provider} from 'react-redux';
 import {PersistGate} from 'redux-persist/integration/react';
-import {
-  MobileFastDarkTheme,
-  MobileFastRNETheme,
-  MobileFastTheme,
-} from './themes/mobilefast';
+import {theme} from './themes/mobilefast';
 import {ThemeProvider} from '@rneui/themed';
 import Purchases from 'react-native-purchases';
 import {LogLevel, OneSignal} from 'react-native-onesignal';
+import {colors_dark, colors_light} from './themes/mobilefast/colors';
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -51,10 +48,8 @@ function App(): JSX.Element {
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <ThemeProvider theme={MobileFastRNETheme}>
-          <Navigation
-            theme={isDarkMode ? MobileFastDarkTheme : MobileFastTheme}
-          />
+        <ThemeProvider theme={theme}>
+          <Navigation theme={isDarkMode ? colors_dark : colors_light} />
         </ThemeProvider>
       </PersistGate>
     </Provider>

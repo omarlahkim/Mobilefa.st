@@ -5,13 +5,13 @@
     "paths": {
       "src/*": ["./src/*"],
       "assets/*": ["./src/assets/*"],
-      "components/*": ["./src/components/*"],
+      "components/*": ["src/components/*"],
       "constants/*": ["./src/constants/*"],
       "helpers/*": ["./src/helpers/*"],
       "hooks/*": ["./src/hooks/*"],
       "navigation/*": ["./src/navigation/*"],
       "redux/*": ["./src/redux/*"],
-      "screens/*": ["./src/screens/*"],
+      "screens/*": ["src/screens/*"],
       "theme/*": ["./src/theme/*"],
       "utils/*": ["./src/utils/*"]
     },

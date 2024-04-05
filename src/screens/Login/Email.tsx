@@ -1,8 +1,8 @@
 import React from 'react';
 import {Input, Text} from '@rneui/themed';
 import {View} from 'react-native';
-import BaseView from 'src/components/Common/UnauthenticatedSection/BaseView';
-import SocialLoginButton from 'src/components/Common/UnauthenticatedSection/SocialLoginButton';
+import BaseView from 'src/components/common/views/BaseView';
+import SocialLoginButton from 'src/components/common/ui/buttons/SocialLoginButton';
 import styles from './styles';
 import {useEffect, useState} from 'react';
 import {useLoginMutation} from 'src/redux/api/auth';
@@ -15,8 +15,9 @@ export default function EmailLogin() {
   const [password, setPassword] = useState('');
   // useDispatch
   const dispatch = useDispatch();
+  const navigateToSignUp = () => {};
 
-  const [login, {isError, isLoading, isSuccess, isUninitialized, data}] =
+  const [login, {isError, isLoading, isSuccess, isUninitialized, data, error}] =
     useLoginMutation();
 
   useEffect(() => {
@@ -32,34 +33,27 @@ export default function EmailLogin() {
       },
       () => {
         console.log('Login failed');
+        console.log(error);
       },
     );
-  }, [isSuccess, isError, isLoading, isUninitialized, data, dispatch]);
+  }, [isSuccess, isError, isLoading, isUninitialized, data, dispatch, error]);
 
   return (
     <BaseView
       description={
         <>
-          Develop{' '}
-          <Text
-            style={{
-              textDecorationStyle: 'solid',
-              textDecorationLine: 'underline',
-              textDecorationColor: '#FFBB00',
-            }}>
-            Faster
-          </Text>{' '}
-          Fast ⚡️ Mobile Applications that generate money 💰
+          Develop <Text style={styles.underlined}>Faster</Text> Fast ⚡️ Mobile
+          Applications that generate money 💰
         </>
       }>
       <View style={styles.actionsContainer}>
         <Input
-          value={username}
+          defaultValue={username}
           onChangeText={setUsername}
           placeholder="Username or Email"
         />
         <Input
-          value={password}
+          defaultValue={password}
           onChangeText={setPassword}
           secureTextEntry
           placeholder="Password"
@@ -67,8 +61,10 @@ export default function EmailLogin() {
         <SocialLoginButton
           color="#8221FF"
           text="Sign In"
-          tcolor="white"
-          onPress={() => login({username: username.toLowerCase(), password})}
+          textColor="white"
+          onPress={() => {
+            login({username: username.toLowerCase(), password});
+          }}
         />
       </View>
       <View style={styles.SignUpContainer}>
@@ -76,8 +72,8 @@ export default function EmailLogin() {
         <SocialLoginButton
           color="#FFBB00"
           text="Create your account"
-          tcolor="black"
-          //   onPress={navigateToSignUp}
+          textColor="black"
+          onPress={navigateToSignUp}
         />
       </View>
     </BaseView>

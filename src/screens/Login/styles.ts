@@ -29,6 +29,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: 10,
   },
+  underlined: {
+    textDecorationStyle: 'solid',
+    textDecorationLine: 'underline',
+    textDecorationColor: '#FFBB00',
+  },
 });
 
 export default styles;

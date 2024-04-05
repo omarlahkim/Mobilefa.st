@@ -1,12 +1,6 @@
 import React from 'react';
 import {Button, Icon, Image, ListItem} from '@rneui/themed';
-import {
-  Dimensions,
-  SafeAreaView,
-  ScrollView,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import {Dimensions, ScrollView, TouchableOpacity, View} from 'react-native';
 import {styles} from './style';
 import {useEffect, useState} from 'react';
 import Purchases from 'react-native-purchases';

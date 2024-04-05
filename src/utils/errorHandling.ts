@@ -1,3 +1,17 @@
+import {t} from 'i18next';
+
+export const ERRORS = {
+  INVALID_EMAIL: t('invalid_email'),
+  INVALID_PASSWORD: t('Invalid password'),
+  INVALID_USERNAME: t('Invalid username'),
+  INVALID_PHONE: t('Invalid phone number'),
+  INVALID_NAME: t('Invalid name'),
+  INVALID_ID: t('Invalid ID'),
+  INVALID_TOKEN: t('Invalid token'),
+  INVALID_ADDRESS: t('Invalid address'),
+  INVALID_DATE: t('Invalid date'),
+};
+
 export async function responseHandler(
   isSuccess: boolean,
   isError: boolean,
