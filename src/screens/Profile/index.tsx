@@ -4,19 +4,17 @@ import {ScrollView, View} from 'react-native';
 import FastImage from 'react-native-fast-image';
 import {styles} from './styles';
 import {logOutUser} from 'src/services/user';
+import Title from 'src/components/ui/headers/Title';
 
 export default function Profile() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <View
-        style={{
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          paddingHorizontal: 20,
-        }}>
-        <Text h1>Profile</Text>
-        <Icon name="gear" type="font-awesome" />
-      </View>
+      <Title
+        title="Profile"
+        iconName="gear"
+        iconType="FontAwesome5"
+        size="lg"
+      />
 
       <View style={styles.contentContainer}>
         <FastImage

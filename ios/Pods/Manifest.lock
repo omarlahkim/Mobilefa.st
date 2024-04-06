@@ -1225,7 +1225,7 @@ PODS:
     - React-Core
     - SDWebImage (~> 5.11.1)
     - SDWebImageWebPCoder (~> 0.8.4)
-  - RNFlashList (1.6.3):
+  - RNFlashList (1.6.4):
     - React-Core
   - RNPurchases (7.24.0):
     - PurchasesHybridCommon (= 10.2.0)
@@ -1570,7 +1570,7 @@ SPEC CHECKSUMS:
   RevenueCat: b552a07693b061ff7ea42c8c224f0613755aafe1
   RNCAsyncStorage: 10591b9e0a91eaffee14e69b3721009759235125
   RNFastImage: 5c9c9fed9c076e521b3f509fe79e790418a544e8
-  RNFlashList: 4b4b6b093afc0df60ae08f9cbf6ccd4c836c667a
+  RNFlashList: b521ebdd7f9352673817f1d98e8bdc0c8cf8545b
   RNPurchases: 4ebeacb9d039c1c6095467559499a7b90ab3c4eb
   RNScreens: 17e2f657f1b09a71ec3c821368a04acbb7ebcb46
   RNSVG: ba3e7232f45e34b7b47e74472386cf4e1a676d0a
