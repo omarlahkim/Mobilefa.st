@@ -1,5 +1,5 @@
 import React from 'react';
-import InAppPurchaseModal from 'src/components/modals/inapppurchase';
+import InAppPurchaseModal from 'src/components/ui/modals/inapppurchase';
 import {MainStack} from 'src/navigation/stacks';
 import {BottomTabNavigator} from './bottomtab';
 

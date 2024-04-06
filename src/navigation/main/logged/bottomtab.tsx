@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unstable-nested-components */
 import React from 'react';
-import NavigationIcon from 'src/components/navigation/NavigationIcon';
+import NavigationIcon from 'src/components/ui/navigation/NavigationIcon';
 import {Tab} from 'src/navigation/stacks';
 import {Home} from 'src/screens';
 import {ProfileNavigator} from './profile';

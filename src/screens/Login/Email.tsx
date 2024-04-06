@@ -1,8 +1,8 @@
 import React from 'react';
 import {Input, Text} from '@rneui/themed';
 import {View} from 'react-native';
-import BaseView from 'src/components/common/views/BaseView';
-import SocialLoginButton from 'src/components/common/ui/buttons/SocialLoginButton';
+import BaseView from 'src/components/ui/views/BaseView';
+import SocialLoginButton from 'src/components/ui/buttons/SocialLoginButton';
 import styles from './styles';
 import {useEffect, useState} from 'react';
 import {useLoginMutation} from 'src/redux/api/auth';

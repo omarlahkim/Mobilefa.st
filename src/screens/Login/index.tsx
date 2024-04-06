@@ -1,9 +1,9 @@
 import {Text} from '@rneui/themed';
 import React, {useEffect} from 'react';
 import {View} from 'react-native';
-import Or from 'src/components/common/ui/orseparator/OrSeparator';
-import BaseView from '../../components/common/views/BaseView';
-import SocialLoginButton from '../../components/common/ui/buttons/SocialLoginButton';
+import Or from 'src/components/ui/separators/OrSeparator';
+import BaseView from '../../components/ui/views/BaseView';
+import SocialLoginButton from '../../components/ui/buttons/SocialLoginButton';
 import styles from './styles';
 import {useOauth2LoginMutation} from 'src/redux/api/auth';
 import {getFaceBookToken, handleFacebookLoginResponse} from 'src/services/auth';
