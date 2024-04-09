@@ -1,21 +1,20 @@
-import React from 'react';
-import {Input, Text} from '@rneui/themed';
+import {Text} from '@rneui/themed';
+import React, {useEffect} from 'react';
+import {useForm} from 'react-hook-form';
 import {View} from 'react-native';
-import BaseView from 'src/components/ui/views/BaseView';
-import SocialLoginButton from 'src/components/ui/buttons/SocialLoginButton';
-import styles from './styles';
-import {useEffect, useState} from 'react';
-import {useLoginMutation} from 'src/redux/api/auth';
-import {responseHandler} from 'src/utils/errorHandling';
-import {confirmAuth} from 'src/redux/features/auth';
 import {useDispatch} from 'react-redux';
+import SocialLoginButton from 'src/components/ui/buttons/SocialLoginButton';
+import TextInput from 'src/components/ui/inputs/TextInput';
+import BaseView from 'src/components/ui/views/BaseView';
+import {signIn} from 'src/forms';
+import {useLoginMutation} from 'src/redux/api/auth';
+import {confirmAuth} from 'src/redux/features/auth';
+import {responseHandler} from 'src/utils/errorHandling';
+import styles from './styles';
 
 export default function EmailLogin() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
   // useDispatch
   const dispatch = useDispatch();
-  const navigateToSignUp = () => {};
 
   const [login, {isError, isLoading, isSuccess, isUninitialized, data, error}] =
     useLoginMutation();
@@ -37,43 +36,31 @@ export default function EmailLogin() {
       },
     );
   }, [isSuccess, isError, isLoading, isUninitialized, data, dispatch, error]);
+  const {control, handleSubmit} = useForm();
 
+  const _onSubmit = data => {
+    // text to lowercase
+    login({username: data.username.toLowerCase(), password: data.password});
+  };
   return (
-    <BaseView
-      description={
-        <>
-          Develop <Text style={styles.underlined}>Faster</Text> Fast ⚡️ Mobile
-          Applications that generate money 💰
-        </>
-      }>
+    <BaseView description={<Text>Welcome to MobileFast</Text>}>
       <View style={styles.actionsContainer}>
-        <Input
-          defaultValue={username}
-          onChangeText={setUsername}
-          placeholder="Username or Email"
-        />
-        <Input
-          defaultValue={password}
-          onChangeText={setPassword}
-          secureTextEntry
-          placeholder="Password"
-        />
+        {signIn.map((item, index) => (
+          <TextInput
+            control={control}
+            key={index}
+            name={item.name}
+            placeholder={item.placeholder}
+            secureTextEntry={item.secureTextEntry}
+            placeholderTextColor="rgba(0, 0, 0, 0.5)"
+            color="rgba(255, 255, 255, 0.8)"
+          />
+        ))}
         <SocialLoginButton
           color="#8221FF"
           text="Sign In"
           textColor="white"
-          onPress={() => {
-            login({username: username.toLowerCase(), password});
-          }}
-        />
-      </View>
-      <View style={styles.SignUpContainer}>
-        <Text h3>Don't have an account?</Text>
-        <SocialLoginButton
-          color="#FFBB00"
-          text="Create your account"
-          textColor="black"
-          onPress={navigateToSignUp}
+          onPress={handleSubmit(_onSubmit)}
         />
       </View>
     </BaseView>

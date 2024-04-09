@@ -1,11 +1,11 @@
-import * as React from 'react';
 import {NavigationContainer, Theme} from '@react-navigation/native';
-import {navigationRef} from '../services';
+import * as React from 'react';
 import {SafeAreaView, StatusBar, StyleSheet} from 'react-native';
+import {useSelector} from 'react-redux';
+import {RootState} from '../../redux/store/store';
+import {navigationRef} from '../services';
 import LoggedInNavigator from './logged';
 import UnLoggedNavigator from './unlogged';
-import {RootState} from '../../redux/store/store';
-import {useSelector} from 'react-redux';
 
 interface IProps {
   theme: Theme;

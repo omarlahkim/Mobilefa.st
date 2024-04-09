@@ -2,7 +2,19 @@ import {Icon, Text} from '@rneui/themed';
 import React from 'react';
 import {StyleSheet, TouchableOpacity, View} from 'react-native';
 
-function _size(input: string) {
+interface TitleProps {
+  title: string;
+  iconName: string;
+  iconType: string;
+  onPress: () => void;
+  size?: 'sm' | 'md' | 'lg';
+}
+
+interface sizeProps {
+  size: 'sm' | 'md' | 'lg' | null;
+}
+
+function _size(input: sizeProps | string | undefined) {
   switch (input) {
     case 'sm':
       return 15;
@@ -15,7 +27,7 @@ function _size(input: string) {
   }
 }
 
-export default function Title(props: any) {
+export default function Title(props: TitleProps) {
   const styles = dynamicStyles(props);
   return (
     <View style={styles.container}>
