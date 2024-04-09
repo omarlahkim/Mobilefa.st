@@ -7,6 +7,7 @@ export const colors_light = {
     text: '#333333',
     border: '#f6f6f6',
     notification: 'rgb(255, 69, 58)',
+    error: '#cf6679',
   },
 };
 
@@ -19,5 +20,6 @@ export const colors_dark = {
     text: '#ffffff',
     border: '#f6f6f6',
     notification: 'rgb(255, 69, 58)',
+    error: '#cf6679',
   },
 };

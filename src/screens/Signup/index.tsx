@@ -1,12 +1,14 @@
-import React, {ComponentProps, useEffect, useState} from 'react';
-import {Alert, ScrollView, View} from 'react-native';
-import styles from './styles';
+import {Button, Icon, Image, Text} from '@rneui/themed';
+import React, {ComponentProps, useEffect} from 'react';
+import {useForm} from 'react-hook-form';
+import {ScrollView, View} from 'react-native';
 import {useDispatch} from 'react-redux';
-import {Button, Icon, Image, Input, Text} from '@rneui/themed';
-import {track} from '@amplitude/analytics-react-native';
+import TextInput from 'src/components/ui/inputs/TextInput';
+import {signUp as signUpData} from 'src/forms';
 import {useRegisterMutation} from 'src/redux/api/auth';
-import {responseHandler} from 'src/utils/errorHandling';
 import {confirmAuth} from 'src/redux/features/auth';
+import {responseHandler} from 'src/utils/errorHandling';
+import styles from './styles';
 
 interface IloginButtonProps {
   color: string;
@@ -37,11 +39,6 @@ function SocialLoginButton({
 
 export default function SignUp({navigation}: ComponentProps<any>) {
   const dispatch = useDispatch();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [username, setUsername] = useState('');
-  const [verifyPassword, setVerifyPassword] = useState('');
-  const [fullName, setFullName] = useState('');
 
   const [register, {isError, isLoading, isSuccess, isUninitialized, data}] =
     useRegisterMutation();
@@ -61,24 +58,21 @@ export default function SignUp({navigation}: ComponentProps<any>) {
     );
   }, [isSuccess, isError, isLoading, isUninitialized, data, dispatch]);
 
-  const navigateToSignUp = () => {
-    console.log('Navigating to SignUp');
-    track('Navigating to SignUp');
-    navigation.navigate('SignUp');
-  };
+  const {control, handleSubmit} = useForm();
 
-  const _signUp = async () => {
-    if (password !== verifyPassword) {
-      Alert.alert('Passwords do not match');
-      return;
-    }
-    register({
-      password1: password,
-      password2: verifyPassword,
-      username,
-      email,
-      // full_name: fullName,
-    });
+  const _signUp = async data => {
+    console.log(data);
+    // if (password !== verifyPassword) {
+    //   Alert.alert('Passwords do not match');
+    //   return;
+    // }
+    // register({
+    //   password1: password,
+    //   password2: verifyPassword,
+    //   username,
+    //   email,
+    //   // full_name: fullName,
+    // });
   };
 
   return (
@@ -87,7 +81,7 @@ export default function SignUp({navigation}: ComponentProps<any>) {
         width={100}
         height={100}
         style={{
-          height: 55,
+          height: 45,
           width: 240,
           resizeMode: 'contain',
         }}
@@ -95,61 +89,29 @@ export default function SignUp({navigation}: ComponentProps<any>) {
       />
       <View>
         <Text h1 style={{textAlign: 'center'}}>
-          Develop{' '}
-          <Text
-            style={{
-              textDecorationStyle: 'solid',
-              textDecorationLine: 'underline',
-              textDecorationColor: '#FFBB00',
-            }}>
-            Faster
-          </Text>{' '}
-          Fast ⚡️ Mobile Applications that generate money 🤑
+          Welcome to MobileFast
         </Text>
         <Text h4 style={{textAlign: 'center'}}>
-          No we didn't mistake the word "Faster", Neither "Fast"! 😂
+          You can make your startup faster with us
         </Text>
       </View>
       <View style={styles.actionsContainer}>
-        <Input
-          onChangeText={setFullName}
-          value={fullName}
-          placeholder="Full Name (First and Last)"
-        />
-        <Input
-          onChangeText={setUsername}
-          value={username}
-          placeholder="Username"
-        />
-        <Input
-          onChangeText={setEmail}
-          value={email}
-          placeholder="Email eg. example@email.com"
-        />
-        <Input
-          onChangeText={setPassword}
-          value={password}
-          placeholder="Password"
-          secureTextEntry
-        />
-        <Input
-          onChangeText={setVerifyPassword}
-          value={verifyPassword}
-          placeholder="Verify your Password"
-          secureTextEntry
-        />
-        <Button title="Sign Up" onPress={_signUp}></Button>
+        {signUpData.map((item, index) => (
+          <TextInput
+            placeholderTextColor="rgba(0, 0, 0, 0.5)"
+            textColor="black"
+            color="rgba(255, 255, 255, 0.8)"
+            textAlign="left"
+            control={control}
+            key={index}
+            name={item.label}
+            placeholder={item.placeholder}
+            secureTextEntry={item.secureTextEntry}
+          />
+        ))}
+        <Button title="Sign Up" onPress={handleSubmit(_signUp)}></Button>
       </View>
-      <View style={styles.SignUpContainer}>
-        <Text h3>Already have an account?</Text>
-        <SocialLoginButton
-          color="#FFBB00"
-          icon="login"
-          text="Login to your account"
-          tcolor="black"
-          onPress={navigateToSignUp}
-        />
-      </View>
+
       <View style={styles.poweredContainer}>
         <Text h4>Powered by: </Text>
         <Image

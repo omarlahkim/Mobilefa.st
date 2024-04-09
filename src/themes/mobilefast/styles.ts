@@ -26,6 +26,7 @@ export const styles = {
     containerStyle: {
       borderRadius: 5,
       width: '100%',
+      marginVertical: 10,
     },
   },
   Input: {

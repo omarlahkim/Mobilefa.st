@@ -1,13 +1,13 @@
+import {ThemeProvider} from '@rneui/themed';
 import React, {useEffect} from 'react';
 import {Platform, useColorScheme} from 'react-native';
-import Navigation from './navigation/main';
-import {persistor, store} from './redux/store/store';
+import {LogLevel, OneSignal} from 'react-native-onesignal';
+import Purchases from 'react-native-purchases';
 import {Provider} from 'react-redux';
 import {PersistGate} from 'redux-persist/integration/react';
+import Navigation from './navigation/main';
+import {persistor, store} from './redux/store/store';
 import {theme} from './themes/mobilefast';
-import {ThemeProvider} from '@rneui/themed';
-import Purchases from 'react-native-purchases';
-import {LogLevel, OneSignal} from 'react-native-onesignal';
 import {colors_dark, colors_light} from './themes/mobilefast/colors';
 
 function App(): JSX.Element {
