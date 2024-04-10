@@ -1,8 +1,8 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
 import {Platform} from 'react-native';
 
-const BASE_URL_IOS = 'http://localhost:8000/';
-const BASE_URL_ANDROID = 'http://10.0.2.2:8000/';
+const BASE_URL_IOS = 'http://localhost:8000/api/v1/';
+const BASE_URL_ANDROID = 'http://10.0.2.2:8000/api/v1/';
 
 // Define a service using a base URL and expected endpoints
 export const authApi = createApi({

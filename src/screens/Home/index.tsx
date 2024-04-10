@@ -1,8 +1,8 @@
 import {Button} from '@rneui/themed';
 import React from 'react';
 import {RefreshControl, ScrollView} from 'react-native';
+import CardsList from 'src/components/ui/cards/simple/CardsList';
 import Title from 'src/components/ui/headers/Title';
-import CardsList from 'src/components/ui/lists/cardslist/CardsList';
 import {navigateToPurchaseModal} from 'src/navigation/services';
 import styles from './styles';
 

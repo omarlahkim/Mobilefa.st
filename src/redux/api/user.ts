@@ -1,6 +1,6 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
 
-const BASE_URL = 'http://localhost:8000/api/v2/';
+const BASE_URL = 'http://localhost:8000/api/v1/users/';
 
 // Define a service using a base URL and expected endpoints
 export const userApi = createApi({
@@ -10,8 +10,9 @@ export const userApi = createApi({
     prepareHeaders: (headers, {getState}) => {
       // If we have a token set in the state, let's use it
       const token = (getState() as any).auth.token;
+      console.log(token);
       if (token) {
-        headers.set('Authorization', `Bearer ${token}`);
+        headers.set('Authorization', `${token}`);
       }
       return headers;
     },
@@ -19,7 +20,7 @@ export const userApi = createApi({
   endpoints: builder => ({
     getUser: builder.query({
       query: () => ({
-        url: 'authUser/',
+        url: 'user/',
         method: 'GET',
       }),
     }),

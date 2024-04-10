@@ -13,23 +13,19 @@ import {styles} from './styles';
 
 export default function Profile() {
   const [isFocused, setIsFocused] = React.useState(false);
-  const [refreshing, setRefreshing] = React.useState(false);
   const {control, handleSubmit} = useForm();
-  const _onRefresh = React.useCallback(() => {
-    setRefreshing(true);
-    setTimeout(() => {
-      setRefreshing(false);
-    }, 2000);
-  }, []);
-  const _onSubmit = data => {
+
+  const _onSubmit = (data: any) => {
     console.log(data);
   };
-  const {} = useGetUserQuery();
+  const {data, error, isError, isLoading, isSuccess, refetch, isFetching} =
+    useGetUserQuery();
+  console.log(data);
 
   return (
     <ScrollView
       refreshControl={
-        <RefreshControl refreshing={refreshing} onRefresh={_onRefresh} />
+        <RefreshControl refreshing={isFetching} onRefresh={refetch} />
       }
       contentContainerStyle={styles.container}>
       <Title
@@ -62,7 +58,6 @@ export default function Profile() {
             labelColor="#555555"
             value={item.value}
             label={item.label}
-            secureTextEntry={item.secureTextEntry}
           />
         ))}
 

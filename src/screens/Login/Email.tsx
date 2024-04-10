@@ -38,9 +38,11 @@ export default function EmailLogin() {
   }, [isSuccess, isError, isLoading, isUninitialized, data, dispatch, error]);
   const {control, handleSubmit} = useForm();
 
-  const _onSubmit = data => {
-    // text to lowercase
-    login({username: data.username.toLowerCase(), password: data.password});
+  const _onSubmit = (credentials: any) => {
+    login({
+      username: credentials.username.toLowerCase(),
+      password: credentials.password,
+    });
   };
   return (
     <BaseView description={<Text>Welcome to MobileFast</Text>}>
