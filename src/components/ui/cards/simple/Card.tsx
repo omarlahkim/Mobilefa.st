@@ -14,7 +14,6 @@ export default function CardItem({
   onPress,
 }: any) {
   const styles = dynamicStyles({bgColor, txtColor, color, horizontal});
-  console.log(color);
   return (
     <TouchableOpacity onPress={onPress}>
       <Card containerStyle={styles.container}>
